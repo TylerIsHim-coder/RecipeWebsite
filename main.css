@@ -1,0 +1,554 @@
+#title {
+    color: #505caf;
+    font-family: Copperplate;
+    position: absolute;
+    right: 80%;
+    bottom: 91.75%;
+}
+
+#logo {
+    position: absolute;
+    right: 77%;
+    bottom: 94.5%;
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidenav {
+    font-family: Copperplate;
+    color: #a2b6d9;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #505caf;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #cfd9eb;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #word1 {
+    position: absolute;
+    font-family: Copperplate;
+  }
+
+  #swedishmeatballs {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 62%;
+    right: 74.25%;
+  }
+
+  #word2 {
+    position: absolute;
+    font-family: Copperplate;
+    right: 50%;
+  }
+
+  #grilledsalmon {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 62%;
+    right: 42%;
+  }
+
+  #word3 {
+    position: absolute;
+    right: 22%;
+    font-family: Copperplate;
+  }
+
+  #meatloaf {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 62%;
+    right: 10%;
+  }
+
+  #word4 {
+    position: absolute;
+    bottom: 53.6%;
+    font-family: Copperplate;
+  }
+
+  #sttortellini {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 74.25%;
+  }
+
+  #word5 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 55.5%;
+    font-family: Copperplate;
+  }
+
+  #beefstew {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 42%;
+  }
+
+  #word6 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 15.4%;
+    font-family: Copperplate;
+  }
+
+  #gslinguine {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 10%;
+  }
+
+  #word7 {
+    position: absolute;
+    bottom: 21.5%;
+    font-family: Copperplate;
+  }
+
+  #chickenmasala {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -2%;
+    right: 74.25%;
+  }
+
+  #word8 {
+    position: absolute;
+    bottom: 21.5%;
+    right: 54%;
+    font-family: Copperplate;
+  }
+
+  #alfredo {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -2%;
+    right: 42%;
+  }
+
+  #word9 {
+    position: absolute;
+    bottom: 21.5%;
+    right: 15%;
+    font-family: Copperplate;
+  }
+
+  #chili {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -2%;
+    right: 10%;
+  }
+
+  #word10 {
+    position: absolute;
+    bottom: -11.5%;
+    font-family: Copperplate;
+  }
+
+  #chickenbreast {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -35%;
+    right: 74.25%;
+  }
+
+  #word11 {
+    position: absolute;
+    bottom: -11.5%;
+    right: 48%;
+    font-family: Copperplate;
+  }
+
+  #sesamechicken {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -35%;
+    right: 42%;
+  }
+
+  #word12 {
+    position: absolute;
+    bottom: -11.5%;
+    right: 13%;
+    font-family: Copperplate;
+  }
+
+  #beefgoulash {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -35%;
+    right: 10%;
+  }
+
+  #word13 {
+    position: absolute;
+    bottom: -44.25%;
+    font-family: Copperplate;
+  }
+
+  #scallops {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -68%;
+    right: 74.25%;
+  }
+
+  #word14 {
+    position: absolute;
+    bottom: -44.25%;
+    right: 50%;
+    font-family: Copperplate;
+  }
+
+  #coconutrice {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -68%;
+    right: 42%;
+  }
+
+  #word15 {
+    position: absolute;
+    bottom: -44.25%;
+    right: 21.25%;
+    font-family: Copperplate;
+  }
+
+  #mongolianbeef {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -68%;
+    right: 10%;
+  }
+
+  #word16 {
+    position: absolute;
+    bottom: -78%;
+    font-family: Copperplate;
+  }
+
+  #ramen {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -101.5%;
+    right: 74.25%;
+  }
+
+  #word17 {
+    position: absolute;
+    right: 50.5%;
+    bottom: -78%;
+    font-family: Copperplate;
+  }
+
+  #friedrice {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -101.5%;
+    right: 42%;
+  }
+
+  #word18 {
+    position: absolute;
+    right: 23.5%;
+    bottom: -78%;
+    font-family: Copperplate;
+  }
+
+  #beeflomein {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -101.5%;
+    right: 10%;
+  }
+
+  #word19 {
+    position: absolute;
+    bottom: -111.5%;
+    font-family: Copperplate;
+  }
+
+  #tonkatsu {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -135%;
+    right: 74.25%;
+  }
+
+  #word20 {
+    position: absolute;
+    bottom: -111.5%;
+    right: 52%;
+    font-family: Copperplate;
+  }
+
+  #burger {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -135%;
+    right: 42%;
+  }
+
+  #word21 {
+    position: absolute;
+    bottom: -111.5%;
+    right: 16%;
+    font-family: Copperplate;
+  }
+
+  #crabcakes {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -135%;
+    right: 10%;
+  }
+
+  #word22 {
+    position: absolute;
+    bottom: -144.5%;
+    font-family: Copperplate;
+  }
+
+  #shepherdspie {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -168%;
+    right: 74.25%;
+  }
+
+  #word23 {
+    position: absolute;
+    bottom: -144.5%;
+    right: 54%;
+    font-family: Copperplate;
+  }
+
+  #tuscansalmon {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -168%;
+    right: 42%;
+  }
+
+  #word24 {
+    position: absolute;
+    bottom: -144.5%;
+    right: 15%;
+    font-family: Copperplate;
+  }
+
+  #sapshrimp {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -168%;
+    right: 10%;
+  }
+
+  #word25 {
+    position: absolute;
+    bottom: -177.5%;
+    font-family: Copperplate;
+  }
+
+  #smragu {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -201%;
+    right: 74.25%;
+  }
+
+  #word26 {
+    position: absolute;
+    bottom: -177.5%;
+    right: 53%;
+    font-family: Copperplate;
+  }
+
+  #orangechicken {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -201%;
+    right: 42%;
+  }
+
+  #word27 {
+    position: absolute;
+    bottom: -177.5%;
+    right: 24%;
+    font-family: Copperplate;
+  }
+
+  #sesamebeef {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -201%;
+    right: 10%;
+  }
+
+  #word28 {
+    position: absolute;
+    bottom: -211.25%;
+    font-family: Copperplate;
+  }
+
+  #poachedcod {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -234.75%;
+    right: 74.25%;
+  }
+
+  #word29 {
+    position: absolute;
+    bottom: -211.25%;
+    right: 42.5%;
+    font-family: Copperplate;
+  }
+
+  #sichuanchicken {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -234.75%;
+    right: 42%;
+  }
+
+  #word30 {
+    position: absolute;
+    bottom: -211.25%;
+    right: 15%;
+    font-family: Copperplate;
+  }
+
+  #shanghainoodle {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -234.75%;
+    right: 10%;
+  }
+
+  #word31 {
+    position: absolute;
+    bottom: -244%;
+    font-family: Copperplate;
+  }
+
+  #beefbroccoli {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -268%;
+    right: 74.25%;
+  }
+
+  #word32 {
+    position: absolute;
+    bottom: -244%;
+    right: 47%;
+    font-family: Copperplate;
+  }
+
+  #pastaamatriciana {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -268%;
+    right: 42%;
+  }
+
+  #word33 {
+    position: absolute;
+    bottom: -244%;
+    right: 9.5%;
+    font-family: Copperplate;
+  }
+
+  #lomosaltado {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -268%;
+    right: 10%;
+  }
+
+  #word34 {
+    position: absolute;
+    bottom: -275%;
+    font-family: Copperplate;
+  }
+
+  #thairicesoup {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -305%;
+    right: 74.25%;
+  }
