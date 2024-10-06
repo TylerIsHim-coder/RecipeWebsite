@@ -108,3 +108,48 @@
     right: 10%;
     bottom: 62%;
   }
+
+  #word4 {
+    position: absolute;
+    bottom: 53.6%;
+    font-family: Copperplate;
+  }
+
+  #chickenmasala {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 74.25%;
+  }
+
+  #word5 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 50%;
+    font-family: Copperplate;
+  }
+
+  #chili {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 42%;
+  }
+
+  #word6 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 17.5%;
+    font-family: Copperplate;
+  }
+
+  #chickenbreast {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 10%;
+  }
+
