@@ -2,13 +2,13 @@
     color: #505caf;
     font-family: Copperplate;
     position: absolute;
-    right: 80%;
+    right: 83%;
     bottom: 91.75%;
 }
 
 #logo {
     position: absolute;
-    right: 77%;
+    right: 80%;
     bottom: 94.5%;
     width: 25px;
     height: 25px;
@@ -56,4 +56,14 @@
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  #search {
+    position: absolute;
+    height: 30px;
+    width: 260px;
+    right: 55%;
+    bottom: 94%;
+    border-radius: 25px;
+    font-family: Copperplate;
   }
