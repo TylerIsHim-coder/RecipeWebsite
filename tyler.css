@@ -94,3 +94,17 @@
     bottom: 62%;
     right: 42%;
   }
+
+  #word3 {
+    position: absolute;
+    right: 18%;
+    font-family: Copperplate;
+  }
+
+  #gslinguine {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    right: 10%;
+    bottom: 62%;
+  }
