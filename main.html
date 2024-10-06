@@ -20,6 +20,8 @@
             <a href="asian.html">Asian Cuisine</a>
         </div>
 
+        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
+
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
           <script>
@@ -29,6 +31,175 @@
             
             function closeNav() {
               document.getElementById("mySidenav").style.width = "0";
+            }
+
+            function openPage() {
+              var x = document.getElementById("search").value;
+
+              if (x === "swedish meatballs" || x === "meatballs"){
+                window.open("swedish.html");
+              }
+
+              if (x === "beef stew"){
+                window.open("beefstew.html");
+              }
+
+              if (x === "salmon" || x === "salmon recipes"){
+                window.open("allsalmon.html");
+              }
+
+              if (x === "meatloaf"){
+                window.open("meatloaf.html");
+              }
+
+              if (x === "tortellini" || x === "spinach and tomato tortellini" || x === "tomato and spinach tortellini"){
+                window.open("sttortellini.html");
+              }
+
+              if (x === "linguine" || x === "shrimp linguine" || x === "garlic shrimp linguine" || x === "shrimp garlic linguine" || x === "lingwiny" || x === "linguiny" || x === "linguine pasta") {
+                window.open("gslinguine.html");
+              }
+
+              if (x === "chicken tikka masala" || x === "tikka masala" || x === "masala" || x === "chicken tikka massala" || x === "Indian curry") {
+                window.open("chickenmasala.html");
+              }
+
+              if (x === "pasta" || x === "noodles" || x === "Pasta" || x === "Noodles" || x === "pasta recipes") {
+                window.open("allpasta.html");
+              } 
+
+              if (x === "beef" || x === "meat" || x == "Meat" || x === "Beef" || x === "cow" || x === "Cow" || x === "beef dishes" || x === "beef recipes") {
+                window.open("allbeef.html");
+              }
+
+              if (x === "alfredo sauce" || x === "alfredo" || x === "Alfredo" || x === "Alfredo Sauce" || x === "alferdo sauce" || x === "alferdo") {
+                window.open("alfredo.html");
+              }
+
+              if (x === "chili" || x === "Chili" || x === "Just like wendy's chili" || x === "Just Like Wendy's Chili" || x === "Wendy's Chili" || x === "wendy's chili") {
+                window.open("chili.html");
+              }
+
+              if (x === "chicken" || x === "Chicken" || x === "chicken recipes" || x === "Chicken Recipes" || x === "Chicken recipes" || x === "chicken recipe" || x === "Chicken recipe") {
+                window.open("allchicken.html");
+              }
+
+              if (x === "sesame chicken" || x === "Sesame Chicken" || x === "Sesame chicken" || x === "chicken sesame") {
+                window.open("sesamechicken.html");
+              }
+
+              if (x === "beef goulash" || x === "goulash" || x === "Beef goulash" || x === "Beef Goulash" || x === "Goulash") {
+                window.open("beefgoulash.html");
+              }
+
+              if (x === "asian" || x === "Asian" || x === "asian food" || x === "Asian food" || x === "Asian Food" || x === "Asian cuisine" || x === "asian cuisine" || x === "Asian recipes" || x === "asian recipes") {
+                window.open("asian.html");
+              }
+
+              if (x === "seafood" || x === "fish" || x === "shellfish" || x === "sushi" || x === "seafood recipes" || x === "fish recipes" || x === "shellfish recipes") {
+                window.open("allseafood.html");
+              }
+
+              if (x === "scallops" || x === "seared scallops" || x === "scallop recipe" || x === "scallops recipe") {
+                window.open("scallops.html");
+              }
+
+              if (x === "coconut rice" || x === "asian coconut rice" || x === "rice" || x === "Asian coconut rice" || x === "Coconut rice") {
+                window.open("coconutrice.html");
+              }
+
+              if (x === "mongolian beef" || x === "Mongolian beef" || x === "beef Mongolian" || x === "Mongolian steak" || x === "mongolian steak") {
+                window.open("mongolianbeef.html");
+              }
+
+              if (x === "ramen" || x === "Ramen" || x === "miso ramen" || x === "Miso ramen") {
+                window.open("ramen.html");
+              }
+
+              if (x === "chicken fried rice" || x === "fried rice" || x === "Chicken fried rice" || x === "Fried rice") {
+                window.open("friedrice.html");
+              }
+
+              if (x === "lo mein" || x === "beef lo mein" || x === "Beef lo mein") {
+                window.open("beeflomein.html");
+              }
+
+              if (x === "main dishes" || x === "main courses" || x === "Main dishes" || x === "Main courses") {
+                window.open("main.html");
+              }
+
+              if (x === "tonkatsu" || x === "Tonkatsu" || x === "pork cutlet" || x === "Japanese pork cutlet" || x === "japanese pork cutlet") {
+                window.open("tonkatsu.html");
+              }
+
+              if (x === "shepherd's pie" || x === "shepherds pie" || x === "sherpherds pie" || x === "Shepherds pie") {
+                window.open("sherpherdspie.html");
+              }
+
+              if (x === "grilled salmon" || x === "chef john's salmon" || x === "Chef John's Salmon" || x === "chef johns salmon" || x === "Grilled salmon") {
+                window.open("salmon.html");
+              }
+
+              if (x === "tuscan salmon" || x === "Tuscan salmon" || x === "tuscon salmon" || x === "Tuscon salmon") {
+                window.open("tuscansalmon.html");
+              }
+
+              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer") {
+                window.open("appetizer.html");
+              }
+
+              if (x === "deviled eggs" || x === "Deviled eggs" || x === "Million dollar deviled eggs" || x === "million dollar deviled eggs") {
+                window.open("deviledeggs.html");
+              }
+
+              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp" || x === "shrimp" ) {
+                window.open("sapshrimp.html");
+              }
+
+              if (x === "sausage and mushroom ragu" || x === "ragu" || x === "italian sausage and mushroom ragu" || x === "sausage ragu") {
+                window.open("smragu.html");
+              }
+
+              if (x === "orange chicken" || x === "chicken" || x === "Orange chicken") {
+                window.open("orangechicken.html");
+              }
+
+              if (x === "burger" || x === "hamburger" || x === "Hamburger" || x === "Burger" || x === "cheeseburger" || x === "Cheeseburger") {
+                window.open("burger.html");
+              }
+
+              if (x === "sesame beef" || x === "Sesame beef") {
+                window.open("sesamebeef.html");
+              }
+
+              if (x === "poached cod" || x === "Poached cod" || x === "cod" || x === "cod dishes" || x === "cod dish") {
+                window.open("poachedcod.html");
+              }
+
+              if (x === "sichuan chicken" || x === "sichuan chili chicken") {
+                window.open("sichuanchicken.html");
+              }
+
+              if (x === "shanghai noodles" || x === "Shanghai noodles" || x === "shanghai fried noodles") {
+                window.open("shanghainoodle.html");
+              }
+
+              if (x === "chinese" || x === "Chinese" || x === "chinese recipes" || x === "Chinese recipes" || x === "chinese food" || x === "Chinese food") {
+                window.open("chinese.html");
+              }
+
+              if (x === "beef and broccol" || x === "beef broccoli" || x === "Beef and broccoli") {
+                window.open("beefbroccoli.html");
+              }
+
+              if (x === "pasta all'amatriciana" || x === "amatriciana pasta" || x === "pasta amatriciana" || x === "pasta amaciana" || x === "pasta all amatriciana" || x === "pasta all amaciana" || x === "amaciana pasta") {
+                window.open("pastaamatriciana.html");
+              }
+
+              if (x === "lomo saltado" || x === "Lomo saltado" || x === "Peruvian beef" || x === "Peruvian Beef" || x === "beef peru" || x === "Peru beef") {
+                window.open("lomosaltado.html")
+              }
+
             }
           </script>
 
