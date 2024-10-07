@@ -103,3 +103,18 @@
   bottom: 51%;
   right: 42%;
 }
+
+#word3 {
+  position: absolute;
+  bottom: 75%;
+  right: 13%;
+  font-family: Copperplate;
+}
+
+#sichuanchicken {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  bottom: 51%;
+  right: 10%;
+}
