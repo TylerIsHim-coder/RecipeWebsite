@@ -197,3 +197,16 @@
     right: 10%;
   }
 
+  #word10 {
+    position: absolute;
+    bottom: -11.5%;
+    font-family: Copperplate;
+  }
+
+  #friedrice {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -35%;
+    right: 74.25%;
+  }
