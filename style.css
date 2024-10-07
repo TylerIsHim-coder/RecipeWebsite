@@ -67,3 +67,39 @@
   border-radius: 25px;
   font-family: Copperplate;
 }
+
+#caption1 {
+  position: absolute;
+  font-family: Copperplate;
+  bottom: 84.5%;
+  color: #102798;
+}
+
+#word1 {
+  position: absolute;
+  font-family: Copperplate;
+  bottom: 75%;
+}
+
+#thairicesoup {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  bottom: 51%;
+  right: 74.25%;
+}
+
+#word2 {
+  position: absolute;
+  bottom: 75%;
+  right: 57%;
+  font-family: Copperplate;
+}
+
+#poachedcod {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  bottom: 51%;
+  right: 42%;
+}
