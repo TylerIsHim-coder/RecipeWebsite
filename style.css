@@ -118,3 +118,17 @@
   bottom: 51%;
   right: 10%;
 }
+
+#word4 {
+  position: absolute;
+  bottom: 43.5%;
+  font-family: Copperplate;
+}
+
+#pastaamatriciana {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  bottom: 20%;
+  right: 74.25%;
+}
