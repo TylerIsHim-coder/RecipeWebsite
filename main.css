@@ -562,3 +562,18 @@
     bottom: -300%;
     right: 74.25%;
   }
+
+  #word35 {
+    position: absolute;
+    bottom: -276%;
+    right: 54%;
+    font-family: Copperplate;
+  }
+
+  #beefstro {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -300%;
+    right: 42%;
+  }
