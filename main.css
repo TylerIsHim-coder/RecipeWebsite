@@ -577,3 +577,18 @@
     bottom: -300%;
     right: 42%;
   }
+
+  #word36 {
+    position: absolute;
+    bottom: -276%;
+    right: 21.5%;
+    font-family: Copperplate;
+  }
+
+  #lemoncod {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -300%;
+    right: 10%;
+  }
