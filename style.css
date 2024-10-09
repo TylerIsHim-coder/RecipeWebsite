@@ -132,3 +132,33 @@
   bottom: 20%;
   right: 74.25%;
 }
+
+#word5 {
+  position: absolute;
+  bottom: 43.5%;
+  right: 55.5%;
+  font-family: Copperplate;
+}
+
+#tuscansalmon {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  bottom: 20%;
+  right: 42%;
+}
+
+#word6 {
+  position: absolute;
+  bottom: 43.5%;
+  right: 22%;
+  font-family: Copperplate;
+}
+
+#scallops {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  bottom: 20%;
+  right: 10%;
+}
