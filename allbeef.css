@@ -166,3 +166,18 @@
     right: 74.25%;
     bottom: -2%;
   }
+
+  #word8 {
+    position: absolute;
+    bottom: 21.5%;
+    right: 54%;
+    font-family: Copperplate;
+  }
+
+  #gingersoysteak {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -2%;
+    right: 42%;
+  }
