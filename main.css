@@ -592,3 +592,17 @@
     bottom: -300%;
     right: 10%;
   }
+
+  #word37 {
+    position: absolute;
+    bottom: -308%;
+    font-family: Copperplate;
+  }
+
+  #gingersoysteak {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -332%;
+    right: 74.25%;
+  }
