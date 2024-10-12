@@ -606,3 +606,18 @@
     bottom: -332%;
     right: 74.25%;
   }
+
+  #word38 {
+    position: absolute;
+    bottom: -308%;
+    right: 46%;
+    font-family: Copperplate;
+  }
+
+  #peanutporkchops {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -332%;
+    right: 42%;
+  }
