@@ -621,3 +621,18 @@
     bottom: -332%;
     right: 42%;
   }
+
+  #word39 {
+    position: absolute;
+    bottom: -308%;
+    right: 19%;
+    font-family: Copperplate;
+  }
+
+  #chickennoodle {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -332%;
+    right: 10%;
+  }
