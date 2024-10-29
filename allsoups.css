@@ -1,0 +1,96 @@
+#title {
+    color: #505caf;
+    font-family: Copperplate;
+    position: absolute;
+    right: 83%;
+    bottom: 91.75%;
+}
+
+#logo {
+    position: absolute;
+    right: 80%;
+    bottom: 94.5%;
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidenav {
+    font-family: Copperplate;
+    color: #a2b6d9;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #505caf;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #cfd9eb;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #search {
+    position: absolute;
+    height: 30px;
+    width: 260px;
+    right: 55%;
+    bottom: 94%;
+    border-radius: 25px;
+    font-family: Copperplate;
+  }
+
+  #word1 {
+    position: absolute;
+    font-family: Copperplate;
+  }
+
+  #thairicesoup {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 62%;
+    right: 74.25%;
+  }
+
+  #word2 {
+    position: absolute;
+    font-family: Copperplate;
+    right: 51%;
+  }
+
+  #chickennoodle {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 62%;
+    right: 42%;
+  }
