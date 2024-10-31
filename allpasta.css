@@ -122,3 +122,18 @@
     bottom: 30%;
     right: 74.25%;
   }
+
+  #word5 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 47.25%;
+    font-family: Copperplate;
+  }
+
+  #sausageorecch {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 42%;
+  }
