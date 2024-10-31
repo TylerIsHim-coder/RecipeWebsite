@@ -636,3 +636,17 @@
     bottom: -332%;
     right: 10%;
   }
+
+  #word40 {
+    position: absolute;
+    bottom: -341%;
+    font-family: Copperplate;
+  }
+
+  #sausageorecch {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -365%;
+    right: 74.25%;
+  }
