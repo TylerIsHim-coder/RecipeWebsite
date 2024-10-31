@@ -181,3 +181,18 @@
     bottom: -2%;
     right: 42%;
   }
+
+  #word9 {
+    position: absolute;
+    bottom: 21.5%;
+    right: 21.75%;
+    font-family: Copperplate;
+  }
+
+  #beefstro {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -2%;
+    right: 10%;
+  }

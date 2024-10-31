@@ -137,3 +137,18 @@
     bottom: 30%;
     right: 42%;
   }
+
+  #word6 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 22%;
+    font-family: Copperplate;
+  }
+
+  #beefstro {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 10%;
+  }
