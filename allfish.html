@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="allfish.css">
+    </head>
+    <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
+        <a href="index.html"><img src="fork+knife.png" id="logo"></a>
+
+        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="main.html">Main Dishes</a>
+            <a href="appetizer.html">Appetizers</a>
+            <a href="allbeef.html">Beef Dishes</a>
+            <a href="allpasta.html">Pastas</a>
+            <a href="allchicken.html">Chicken</a>
+            <a href="allseafood.html">Seafood</a>
+            <a href="allsoups.html">Soups & Salads</a>
+            <a href="asian.html">Asian Cuisine</a>
+            <a href="tyler.html">Tyler's Recipes</a>
+        </div>
+
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+
+        <h4 id="word1">Chef John's Salmon:</h4>
+        <a href="salmon.html">
+            <img src="salmon.jpeg" id="grilledsalmon"> 
+        </a>
+
+        <h4 id="word2">Tuscan Salmon:</h4>
+        <a href="tuscansalmon.html">
+            <img src="tuscansalmon.jpeg" id="tuscansalmon"> 
+        </a>
+
+        <h4 id="word3">Poached Cod:</h4>
+        <a href="poachedcod.html">
+            <img src="poachedcod.jpeg" id="poachedcod"> 
+        </a>
+
+        <h4 id="word4">Lemon Butter Cod:</h4>
+        <a href="lemoncod.html">
+            <img src="lemoncod.jpeg" id="lemoncod"> 
+        </a>
+    </body>
+</html>
