@@ -625,7 +625,7 @@
   #word39 {
     position: absolute;
     bottom: -308%;
-    right: 19%;
+    right: 19.5%;
     font-family: Copperplate;
   }
 
@@ -664,4 +664,19 @@
     width: 25%;
     bottom: -365%;
     right: 41.5%;
+  }
+
+  #word42 {
+    position: absolute;
+    bottom: -341%;
+    right: 16%;
+    font-family: Copperplate;
+  }
+
+  #turmericfish {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -365%;
+    right: 10%;
   }
