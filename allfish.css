@@ -123,3 +123,17 @@
     right: 74.25%;
   }
 
+  #word5 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 48%;
+    font-family: Copperplate;
+  }
+
+  #turmericfish {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 42%;
+  }
