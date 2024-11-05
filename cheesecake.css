@@ -67,30 +67,3 @@
     border-radius: 25px;
     font-family: Copperplate;
   }
-
-  #word1 {
-    position: absolute;
-    font-family: Copperplate;
-  }
-
-  #caramelmacarons {
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    bottom: 62%;
-    right: 74.25%;
-  }
-
-  #word2 {
-    position: absolute;
-    font-family: Copperplate;
-    right: 49%;
-  }
-
-  #cheesecake {
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    bottom: 62%;
-    right: 42%;
-  }
