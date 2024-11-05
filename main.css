@@ -680,3 +680,17 @@
     bottom: -365%;
     right: 10%;
   }
+
+  #word43 {
+    position: absolute;
+    bottom: -373%;
+    font-family: Copperplate;
+  }
+
+  #spaghettisauce {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -397%;
+    right: 74.25%;
+  }
