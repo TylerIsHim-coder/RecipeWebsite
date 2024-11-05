@@ -97,11 +97,11 @@
 
   #word3 {
     position: absolute;
-    right: 18%;
+    right: 12.5%;
     font-family: Copperplate;
   }
 
-  #gslinguine {
+  #lomosaltado {
     position: absolute;
     height: 25%;
     width: 25%;
@@ -225,3 +225,48 @@
     bottom: -35%;
     right: 42%;
   }
+
+  #word12 {
+    position: absolute;
+    bottom: -11.5%;
+    right: 21.5%;
+    font-family: Copperplate;
+  }
+
+  #lemoncod {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -35%;
+    right: 10%;
+  }
+
+  #word13 {
+    position: absolute;
+    bottom: -44.25%;
+    font-family: Copperplate;
+  }
+
+  #sichuanchicken {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -68%;
+    right: 74.25%;
+  }
+
+  #word14 {
+    position: absolute;
+    bottom: -44.25%;
+    right: 51.5%;
+    font-family: Copperplate;
+  }
+
+  #chickennoodle {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -68%;
+    right: 42%;
+  }
+
