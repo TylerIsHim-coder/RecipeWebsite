@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="allpasta.css">
+        <link type="text/css" rel="stylesheet" href="pastadough.css">
     </head>
     <body>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
         <a href="index.html"><img src="fork+knife.png" id="logo"></a>
+
+        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,9 +22,8 @@
             <a href="allsoups.html">Soups & Salads</a>
             <a href="alldesserts.html">Desserts</a>
             <a href="asian.html">Asian Cuisine</a>
+            <a href="tyler.html">Tyler's Favorites</a>
         </div>
-
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -98,7 +99,7 @@
                 window.open("asian.html");
               }
 
-              if (x === "seafood" || x === "shellfish" || x === "sushi" || x === "seafood recipes" || x === "shellfish recipes") {
+              if (x === "seafood" || x === "shellfish" || x === "seafood recipes" || x === "shellfish recipes") {
                 window.open("allseafood.html");
               }
 
@@ -146,7 +147,7 @@
                 window.open("tuscansalmon.html");
               }
 
-              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer") {
+              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer" || x === "starters" || x === "starting dishes") {
                 window.open("appetizer.html");
               }
 
@@ -154,7 +155,7 @@
                 window.open("deviledeggs.html");
               }
 
-              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp" || x === "shrimp" ) {
+              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp") {
                 window.open("sapshrimp.html");
               }
 
@@ -254,45 +255,82 @@
                 window.open("cilantroshrimp.html");
               }
 
+              if (x === "shrimp recipes" || x === "shrimp" || x === "shrimp dishes" || x === "shrimps") {
+                window.open("allshrimp.html");
+              }
+
+              if (x === "turmeric fish" || x === "vietnamese turmeric fish" || x === "vietnamese fish" || x === "Vietnamese turmeric fish" || x === "Vietnamese fish") {
+                window.open("turmericfish.html");
+              }
+
+              if (x === "desserts" || x === "Desserts" || x === "sweets" || x === "dessert") {
+                window.open("alldesserts.html");
+              }
+
+              if (x === "macarons" || x === "caramel macarons" || x === "macaron" || x === "salted caramel macarons") {
+                window.open("caramelmacarons.html");
+              }
+
+              if (x === "cheesecake" || x === "strawberry cheesecake" || x === "Cheesecake" || x === "cheesecake recipe") {
+                window.open("cheesecake.html");
+              }
+
+              if (x === "spaghetti sauce" || x === "slow cooked spaghetti sauce" || x === "marinara sauce" || x === "spaghetti") {
+                window.open("spaghettisauce.html");
+              }
+
+              if (x === "sauces" || x === "sauce" || x === "pasta sauce" || x === "pasta sauces") {
+                window.open("allsauces.html");
+              }
+
+              if (x === "spinach artichoke dip" || x === "spinach dip" || x === "artichoke dip" || x === "spinach artichoke") {
+                window.open("spinachdip.html");
+              }
+
+              if (x === "cream corn" || x === "creamed corn" || x === "creamy corn") {
+                window.open("creamcorn.html");
+              }
+
+              if (x === "brownie" || x === "brownies" || x === "chocolate brownie" || x === "Brownie") {
+                window.open("brownie.html");
+              }
+
+              if (x === "key lime pie" || x === "lime pie" || x === "Key lime pie" || x === "key pie" || x === "Lime pie" || x === "key lime") {
+                window.open("keylimepie.html");
+              }
+
+              if (x === "banana bread" || x === "banana loaf" || x === "janet's banana bread") {
+                window.open("bananabread.html");
+              }
+
+              if (x === "snapper" || x === "chili snapper" || x === "sweet chili snapper" || x === "snapper with sweet chili sauce") {
+                window.open("chilisnapper.html");
+              }
+  
               else {
                 window.open("specific.html");
               }
+
             }
           </script>
 
-            <h4 id="word1">Fresh Pasta Dough:</h4>
-            <a href="pastadough.html">
-                <img src="pastadough.jpeg" id="pastadough"> 
-            </a>
-
-            <h4 id="word2">Garlic Shrimp Linguine:</h4>
-            <a href="gslinguine.html">
-                <img src="gslinguine.jpeg" id="gslinguine"> 
-            </a>
-
-            <h4 id="word3">Alfredo Sauce:</h4>
-            <a href="alfredo.html">
-                <img src="alfredo.jpeg" id="alfredo"> 
-            </a>
-
-            <h4 id="word4">Pasta all' Amatriciana:</h4>
-            <a href="pastaamatriciana.html">
-                <img src="pastaamatricicana.jpeg" id="amatriciana"> 
-            </a>
-
-            <h4 id="word5">Orecchiette with Sausage:</h4>
-            <a href="sausageorecch.html">
-                <img src="sausageorecch.jpeg" id="sausageorecch"> 
-            </a>
-
-            <h4 id="word6">Beef Stroganoff:</h4>
-            <a href="beefstro.html">
-                <img src="beefstro.jpeg" id="beefstro"> 
-            </a>
-
-            <h4 id="word7">Slow Cooked Spaghetti Sauce:</h4>
-            <a href="spaghettisauce.html">
-                <img src="spaghettisauce.webp" id="spaghettisauce"> 
-            </a>
+          <h2>Fresh Pasta Dough: </h2>
+          <p>Servings: 1 lbs / Estimated Time: Unknown</p>
+          <h2>Ingredients: </h2>
+          <ul>
+            <li>4 cups all purpose flour</li>
+            <li>4 large eggs</li>
+            <li>9 large egg yolks</li>
+            <li>1 tablespoon olive oil, plus more for tossing</li>
+            <li>Kosher salt</li>
+          </ul>
+          <h2>Directions: </h2>
+          <ol>
+            <li><input type="checkbox">     Pile the flour on a clean, dry surface and make a well in the center, like a volcano. Crack the eggs and egg yolks into the well. Add the olive oil and a pinch of salt. Using a fork, slowly stir the eggs to break up the yolks, scraping gently along the sides and pulling flour into the well. Continue stirring until most of the flour has been incorporated, and then use your hands to knead the mixture into a smooth dough. If the dough is dry and flaky and you can't mix in all the flour, add warm water, 1 tablespoon at a time, until the dough feels elastic. Cover with plastic wrap or a clean kitchen towel and set aside to rest for at least 20 minutes and up to 1 hour.</li>
+            <br>
+            <li><input type="checkbox">     Roll and cut the pasta according to the recipe or your desired shape. Boil the fresh pasta in salted water, toss with sauce, and serve!</li>
+            <br>
+          </ol>
+          <h4>(Credit to MasterChef Junior Cookbook by Christina Tosi)</h4>
     </body>
 </html>
