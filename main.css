@@ -694,3 +694,18 @@
     bottom: -397%;
     right: 74.25%;
   }
+
+  #word44 {
+    position: absolute;
+    bottom: -373%;
+    right: 43%;
+    font-family: Copperplate;
+  }
+
+  #chilisnapper {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -397%;
+    right: 42%;
+  }
