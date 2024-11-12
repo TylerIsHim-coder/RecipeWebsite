@@ -97,7 +97,7 @@
 
   #word3 {
     position: absolute;
-    right: 25%;
+    right: 25.5%;
     font-family: Copperplate;
   }
 
@@ -136,4 +136,19 @@
     width: 25%;
     bottom: 30%;
     right: 42%;
+  }
+
+  #word6 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 11.5%;
+    font-family: Copperplate;
+  }
+
+  #chilisnapper {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 10%;
   }
