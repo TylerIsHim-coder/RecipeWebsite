@@ -709,3 +709,18 @@
     bottom: -397%;
     right: 42%;
   }
+
+  #word45 {
+    position: absolute;
+    bottom: -373%;
+    right: 7.5%;
+    font-family: Copperplate;
+  }
+
+  #baconcreampasta {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -397%;
+    right: 10%;
+  }
