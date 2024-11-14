@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="appetizer.css">
+        <link type="text/css" rel="stylesheet" href="mashedpotatoes.css">
     </head>
     <body>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
         <a href="index.html"><img src="fork+knife.png" id="logo"></a>
+
+        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,9 +22,8 @@
             <a href="allsoups.html">Soups & Salads</a>
             <a href="alldesserts.html">Desserts</a>
             <a href="asian.html">Asian Cuisine</a>
+            <a href="tyler.html">Tyler's Favorites</a>
         </div>
-
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -98,7 +99,7 @@
                 window.open("asian.html");
               }
 
-              if (x === "seafood" || x === "shellfish" || x === "sushi" || x === "seafood recipes" || x === "shellfish recipes") {
+              if (x === "seafood" || x === "shellfish" || x === "seafood recipes" || x === "shellfish recipes") {
                 window.open("allseafood.html");
               }
 
@@ -146,7 +147,7 @@
                 window.open("tuscansalmon.html");
               }
 
-              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer") {
+              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer" || x === "starters" || x === "starting dishes") {
                 window.open("appetizer.html");
               }
 
@@ -154,7 +155,7 @@
                 window.open("deviledeggs.html");
               }
 
-              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp" || x === "shrimp" ) {
+              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp") {
                 window.open("sapshrimp.html");
               }
 
@@ -290,35 +291,58 @@
                 window.open("creamcorn.html");
               }
 
+              if (x === "brownie" || x === "brownies" || x === "chocolate brownie" || x === "Brownie") {
+                window.open("brownie.html");
+              }
+
+              if (x === "key lime pie" || x === "lime pie" || x === "Key lime pie" || x === "key pie" || x === "Lime pie" || x === "key lime") {
+                window.open("keylimepie.html");
+              }
+
+              if (x === "banana bread" || x === "banana loaf" || x === "janet's banana bread") {
+                window.open("bananabread.html");
+              }
+
+              if (x === "snapper" || x === "chili snapper" || x === "sweet chili snapper" || x === "snapper with sweet chili sauce") {
+                window.open("chilisnapper.html");
+              }
+
+              if (x === "pasta dough" || x === "fresh pasta" || x === "fresh pasta dough") {
+                window.open("pastadough.html");
+              }
+
+              if (x === "pappardelle" || x === "bacon cream pasta" || x === "bacon pasta" || x === "papardelle" || x === "bacon cream pappardelle") {
+                window.open("baconcreampasta.html");
+              }
+
+              if (x === "mashed potatoes" || x === "parmesan mashed potatoes") {
+                window.open("mashedpotatoes.html");
+              }
+  
               else {
                 window.open("specific.html");
               }
+
             }
           </script>
-
-        <h4 id="word1">Million Dollar Deviled Eggs:</h4>
-        <a href="deviledeggs.html">
-            <img src="deviledeggs.jpeg" id="deviledeggs"> 
-        </a>
-
-        <h4 id="word2">Maryland Crab Cakes:</h4>
-        <a href="crabcakes.html">
-            <img src="crabcakes.jpeg" id="crabcakes"> 
-        </a>
-
-        <h4 id="word3">Spinach Artichoke Dip:</h4>
-        <a href="spinachdip.html">
-            <img src="spinachdip.jpeg" id="spinachdip"> 
-        </a>
-
-        <h4 id="word4">Lawry's Creamed Corn:</h4>
-        <a href="creamcorn.html">
-            <img src="creamcorn.jpeg" id="creamcorn"> 
-        </a>
-
-        <h4 id="word5">Parmesan Mashed Potatoes:</h4>
-        <a href="mashedpotatoes.html">
-            <img src="mashedpotatoes.webp" id="mashedpotatoes"> 
-        </a>
+          <h2>Parmesan Mashed Potatoes</h2>
+          <p>Servings: 4 to 6</p>
+          <h2>Ingredients: </h2>
+          <ul>
+            <li>4 medium russet potatoes</li>
+            <li>Kosher salt</li>
+            <li>1/2 cup heavy cream</li>
+            <li>4 tablespoons (1/2 stick) unsalted butter</li>
+            <li>Freshly ground black pepper</li>
+            <li>Grated Parmesan cheese, for serving</li>
+          </ul>
+          <h2>Directions: </h2>
+          <ol>
+            <li><input type="checkbox">     Peel the potatoes, cut them into `-inch pieces, and place in a large pot. Add enough cold water to cover the potatoes by at least 2 inches. Generously season the water with salt and bring to a boil. Cook until the potatoes are tender all the way through, 15 to 20 minutes. Drain in a colander. Push the potatoes through a ricer into a large bowl. (Alternatively, in a large bowl, mash the potatoes with a potato masher or fork.)</li>
+            <br>
+            <li><input type="checkbox">     In a small saucepan, warm the cream and butter over medium heat until the butter has melted completely. Pour the cream-butter mixture, a few tablespoons at a time, into the bowl with the potatoes and stir to incorporate. When the mashed potatoes are your desired consistency, season with salt and pepper. (You may not need to add all the cream-butter mixture.) Sprinkle cheese over the mashed potatoes and serve!</li>
+            <br>
+          </ol>
+          <h4>(Credit to the MasterChef Junior Cookbook by Christina Tosi (p. 156) )</h4>
     </body>
 </html>
