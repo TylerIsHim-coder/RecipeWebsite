@@ -97,7 +97,7 @@
 
   #word3 {
     position: absolute;
-    right: 19%;
+    right: 18%;
     font-family: Copperplate;
   }
 
@@ -138,3 +138,17 @@
     right: 42%;
   }
 
+  #word6 {
+    position: absolute;
+    bottom: 53.6%;
+    right: 14%;
+    font-family: Copperplate;
+  }
+
+  #chickenwings {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: 30%;
+    right: 10%;
+  }
