@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="appetizer.css">
+        <link type="text/css" rel="stylesheet" href="broccolini.css">
     </head>
     <body>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
         <a href="index.html"><img src="fork+knife.png" id="logo"></a>
+
+        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,9 +22,8 @@
             <a href="allsoups.html">Soups & Salads</a>
             <a href="alldesserts.html">Desserts</a>
             <a href="asian.html">Asian Cuisine</a>
+            <a href="tyler.html">Tyler's Favorites</a>
         </div>
-
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -98,7 +99,7 @@
                 window.open("asian.html");
               }
 
-              if (x === "seafood" || x === "shellfish" || x === "sushi" || x === "seafood recipes" || x === "shellfish recipes") {
+              if (x === "seafood" || x === "shellfish" || x === "seafood recipes" || x === "shellfish recipes") {
                 window.open("allseafood.html");
               }
 
@@ -146,7 +147,7 @@
                 window.open("tuscansalmon.html");
               }
 
-              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer") {
+              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer" || x === "starters" || x === "starting dishes") {
                 window.open("appetizer.html");
               }
 
@@ -154,7 +155,7 @@
                 window.open("deviledeggs.html");
               }
 
-              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp" || x === "shrimp" ) {
+              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp") {
                 window.open("sapshrimp.html");
               }
 
@@ -290,45 +291,76 @@
                 window.open("creamcorn.html");
               }
 
+              if (x === "brownie" || x === "brownies" || x === "chocolate brownie" || x === "Brownie") {
+                window.open("brownie.html");
+              }
+
+              if (x === "key lime pie" || x === "lime pie" || x === "Key lime pie" || x === "key pie" || x === "Lime pie" || x === "key lime") {
+                window.open("keylimepie.html");
+              }
+
+              if (x === "banana bread" || x === "banana loaf" || x === "janet's banana bread") {
+                window.open("bananabread.html");
+              }
+
+              if (x === "snapper" || x === "chili snapper" || x === "sweet chili snapper" || x === "snapper with sweet chili sauce") {
+                window.open("chilisnapper.html");
+              }
+
+              if (x === "pasta dough" || x === "fresh pasta" || x === "fresh pasta dough") {
+                window.open("pastadough.html");
+              }
+
+              if (x === "pappardelle" || x === "bacon cream pasta" || x === "bacon pasta" || x === "papardelle" || x === "bacon cream pappardelle") {
+                window.open("baconcreampasta.html");
+              }
+
+              if (x === "mashed potatoes" || x === "parmesan mashed potatoes") {
+                window.open("mashedpotatoes.html");
+              }
+
+              if (x === "seared ahi tuna" || x === "ahi tuna" || x === "sushi" || x === "seared tuna" || x === "cucumber salad" || x === "tuna") {
+                window.open("ahituna.html");
+              }
+
+              if (x === "chicken wings" || x === "buffalo wings" || x === "buffalo chicken wings" || x === "chicken buffalo wings") {
+                window.open("chickenwings.html");
+              }
+
+              if (x === "chocolate lava cake" || x === "lava cake" || x === "molten lava cake" || x ==="chocolate molten lava cake") {
+                window.open("lavacake.html");
+              }
+
+              if (x === "pan seared chicken" || x === "seared chicken" || x === "pan-seared chicken" || x === "oven seared chicken") {
+                window.open("searedchicken.html");
+              }
+  
               else {
                 window.open("specific.html");
               }
+
             }
           </script>
 
-        <h4 id="word1">Million Dollar Deviled Eggs:</h4>
-        <a href="deviledeggs.html">
-            <img src="deviledeggs.jpeg" id="deviledeggs"> 
-        </a>
-
-        <h4 id="word2">Maryland Crab Cakes:</h4>
-        <a href="crabcakes.html">
-            <img src="crabcakes.jpeg" id="crabcakes"> 
-        </a>
-
-        <h4 id="word3">Spinach Artichoke Dip:</h4>
-        <a href="spinachdip.html">
-            <img src="spinachdip.jpeg" id="spinachdip"> 
-        </a>
-
-        <h4 id="word4">Lawry's Creamed Corn:</h4>
-        <a href="creamcorn.html">
-            <img src="creamcorn.jpeg" id="creamcorn"> 
-        </a>
-
-        <h4 id="word5">Parmesan Mashed Potatoes:</h4>
-        <a href="mashedpotatoes.html">
-            <img src="mashedpotatoes.webp" id="mashedpotatoes"> 
-        </a>
-
-        <h4 id="word6">Crispy Baked Chicken Wings:</h4>
-        <a href="chickenwings.html">
-            <img src="chickenwings.jpeg" id="chickenwings"> 
-        </a>
-
-        <h4 id="word7">Sautéed Broccolini:</h4>
-        <a href="broccolini.html">
-            <img src="broccolini.jpeg" id="broccolini"> 
-        </a>
+          <h2>Sautéed Broccolini</h2>
+          <p>Servings: 4</p>
+          <h2>Ingredients: </h2>
+          <ul>
+            <li>1 pound Broccolini, tough bottoms trimmer</li>
+            <li>2 tablespoons extra-virgin olive oil</li>
+            <li>1 shallot, minced</li>
+            <li>2 garlic cloves, minced</li>
+            <li>2 teaspoons crushed red pepper flakes</li>
+            <li>Kosher salt</li>
+            <li>2 tablespoons unsalted butter</li>
+          </ul>
+          <h2>Directions: </h2>
+          <ol>
+            <li><input type="checkbox">     In a large bowl, combine the Broccolini, olive oil, shallot, garlic, and red pepper flakes. Season with salt and toss to coat evenly.</li>
+            <br>
+            <li><input type="checkbox">     In a large sauté pan, melt the butter over medium-high heat. Add the Broccolini and cook, flipping once or twice, until tender, 4 to 6 minutes. Serve.</li>
+            <br>
+          </ol>
+          <h4>(Credit to the MasterChef Junior Cookbook by Christina Tosi)</h4>
     </body>
 </html>

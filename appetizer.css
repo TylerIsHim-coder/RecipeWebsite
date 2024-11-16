@@ -152,3 +152,17 @@
     bottom: 30%;
     right: 10%;
   }
+
+  #word7 {
+    position: absolute;
+    bottom: 21.5%;
+    font-family: Copperplate;
+  }
+
+  #broccolini {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -2%;
+    right: 74.25%;
+  }
