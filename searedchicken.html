@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="allchicken.css">
+        <link type="text/css" rel="stylesheet" href="searedchicken.css">
     </head>
     <body>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
         <a href="index.html"><img src="fork+knife.png" id="logo"></a>
 
+        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
+
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
-            <a href="main.html">Main Courses</a>
+            <a href="main.html">Main Dishes</a>
             <a href="appetizer.html">Appetizers</a>
             <a href="allbeef.html">Beef Dishes</a>
             <a href="allpasta.html">Pastas</a>
@@ -20,9 +22,8 @@
             <a href="allsoups.html">Soups & Salads</a>
             <a href="alldesserts.html">Desserts</a>
             <a href="asian.html">Asian Cuisine</a>
+            <a href="tyler.html">Tyler's Favorites</a>
         </div>
-
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -98,7 +99,7 @@
                 window.open("asian.html");
               }
 
-              if (x === "seafood" || x === "shellfish" || x === "sushi" || x === "seafood recipes" || x === "shellfish recipes") {
+              if (x === "seafood" || x === "shellfish" || x === "seafood recipes" || x === "shellfish recipes") {
                 window.open("allseafood.html");
               }
 
@@ -146,7 +147,7 @@
                 window.open("tuscansalmon.html");
               }
 
-              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer") {
+              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer" || x === "starters" || x === "starting dishes") {
                 window.open("appetizer.html");
               }
 
@@ -154,7 +155,7 @@
                 window.open("deviledeggs.html");
               }
 
-              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp" || x === "shrimp" ) {
+              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp") {
                 window.open("sapshrimp.html");
               }
 
@@ -254,55 +255,119 @@
                 window.open("cilantroshrimp.html");
               }
 
+              if (x === "shrimp recipes" || x === "shrimp" || x === "shrimp dishes" || x === "shrimps") {
+                window.open("allshrimp.html");
+              }
+
+              if (x === "turmeric fish" || x === "vietnamese turmeric fish" || x === "vietnamese fish" || x === "Vietnamese turmeric fish" || x === "Vietnamese fish") {
+                window.open("turmericfish.html");
+              }
+
+              if (x === "desserts" || x === "Desserts" || x === "sweets" || x === "dessert") {
+                window.open("alldesserts.html");
+              }
+
+              if (x === "macarons" || x === "caramel macarons" || x === "macaron" || x === "salted caramel macarons") {
+                window.open("caramelmacarons.html");
+              }
+
+              if (x === "cheesecake" || x === "strawberry cheesecake" || x === "Cheesecake" || x === "cheesecake recipe") {
+                window.open("cheesecake.html");
+              }
+
+              if (x === "spaghetti sauce" || x === "slow cooked spaghetti sauce" || x === "marinara sauce" || x === "spaghetti") {
+                window.open("spaghettisauce.html");
+              }
+
+              if (x === "sauces" || x === "sauce" || x === "pasta sauce" || x === "pasta sauces") {
+                window.open("allsauces.html");
+              }
+
+              if (x === "spinach artichoke dip" || x === "spinach dip" || x === "artichoke dip" || x === "spinach artichoke") {
+                window.open("spinachdip.html");
+              }
+
+              if (x === "cream corn" || x === "creamed corn" || x === "creamy corn") {
+                window.open("creamcorn.html");
+              }
+
+              if (x === "brownie" || x === "brownies" || x === "chocolate brownie" || x === "Brownie") {
+                window.open("brownie.html");
+              }
+
+              if (x === "key lime pie" || x === "lime pie" || x === "Key lime pie" || x === "key pie" || x === "Lime pie" || x === "key lime") {
+                window.open("keylimepie.html");
+              }
+
+              if (x === "banana bread" || x === "banana loaf" || x === "janet's banana bread") {
+                window.open("bananabread.html");
+              }
+
+              if (x === "snapper" || x === "chili snapper" || x === "sweet chili snapper" || x === "snapper with sweet chili sauce") {
+                window.open("chilisnapper.html");
+              }
+
+              if (x === "pasta dough" || x === "fresh pasta" || x === "fresh pasta dough") {
+                window.open("pastadough.html");
+              }
+
+              if (x === "pappardelle" || x === "bacon cream pasta" || x === "bacon pasta" || x === "papardelle" || x === "bacon cream pappardelle") {
+                window.open("baconcreampasta.html");
+              }
+
+              if (x === "mashed potatoes" || x === "parmesan mashed potatoes") {
+                window.open("mashedpotatoes.html");
+              }
+
+              if (x === "seared ahi tuna" || x === "ahi tuna" || x === "sushi" || x === "seared tuna" || x === "cucumber salad" || x === "tuna") {
+                window.open("ahituna.html");
+              }
+
+              if (x === "chicken wings" || x === "buffalo wings" || x === "buffalo chicken wings" || x === "chicken buffalo wings") {
+                window.open("chickenwings.html");
+              }
+
+              if (x === "chocolate lava cake" || x === "lava cake" || x === "molten lava cake" || x ==="chocolate molten lava cake") {
+                window.open("lavacake.html");
+              }
+  
               else {
                 window.open("specific.html");
               }
+
             }
           </script>
 
-        <h4 id="word1">Curry Stand Chicken Tikka Masala:</h4>
-        <a href="chickenmasala.html">
-            <img src="ctmasala.jpeg" id="chickenmasala"> 
-        </a>
-
-        <h4 id="word2">Grilled Chicken Breasts:</h4>
-        <a href="chickenbreast.html">
-            <img src="chickenbreast.jpeg" id="chickenbreast"> 
-        </a>
-
-        <h4 id="word3">Baked Sesame Chicken:</h4>
-        <a href="sesamechicken.html">
-            <img src="sesamechicken.jpeg" id="sesamechicken"> 
-        </a>
-
-        <h4 id="word4">Chicken Fried Rice:</h4>
-        <a href="friedrice.html">
-            <img src="friedrice.jpeg" id="friedrice"> 
-        </a>
-
-        <h4 id="word5">Orange Chicken:</h4>
-        <a href="orangechicken.html">
-            <img src="orangechicken.jpeg" id="orangechicken"> 
-        </a>
-
-        <h4 id="word6">Crispy Sichuan-Chili Chicken:</h4>
-        <a href="sichuanchicken.html">
-            <img src="sichuanchicken.jpeg" id="sichuanchicken"> 
-        </a>
-
-        <h4 id="word7">Chicken Noodle Soup:</h4>
-        <a href="chickennoodle.html">
-            <img src="chickennoodle.jpeg" id="chickennoodle"> 
-        </a>
-
-        <h4 id="word8">Crispy Baked Chicken Wings:</h4>
-        <a href="chickenwings.html">
-            <img src="chickenwings.jpeg" id="chickenwings"> 
-        </a>
-
-        <h4 id="word9">Pan-Seared Chicken:</h4>
-        <a href="searedchicken.html">
-            <img src="searedchicken.jpeg" id="searedchicken"> 
-        </a>
+          <h2>Pan-Seared Chicken with Shoestring Fries</h2>
+          <p>Servings: 4</p>
+          <h2>Ingredients: </h2>
+          <ul>
+            <li>1 large Yukon Gold potato</li>
+            <li>3 tablespoons grapeseed oil</li>
+            <li>Kosher salt and freshly ground pepper</li>
+            <li>Canola oil, for frying</li>
+            <li>4 boneless, skinless chicken breasts</li>
+            <li>7 tablespoons unsalted butter</li>
+            <li>9 sprigs fresh thyme</li>
+            <li>2 cups chicken stock</li>
+            <li>1/4 cup heavy cream</li>
+            <li>Fresh cilantro leaves, for garnish</li>
+          </ul>
+          <h2>Directions: </h2>
+          <ol>
+            <li><input type="checkbox">     Peel the potato and use a spriral cutter to cut the potato into thin noodles. Cut the noodles crosswise into matchstick-length pieces. (Alternatively, use a knife to cut the potato into matchsticks.) Pat the potatoes dry, toss them with 1 tablespoon of the grapeseed oil, and season with salt and pepper.</li>
+            <br>
+            <li><input type="checkbox">     Pour at least 2 inches of canola oil into a large, heavy-bottomes pot. Heat over medium-high heat to 350ºF. Add the potato pieces and fry until golden brown and crispy, 2 to 3 minutes. Using a slotted spoon, transfer the fries to a paper towel-lined plate and let cool</li>
+            <br>
+            <li><input type="checkbox">     Preheat the oven to 350ºF.</li>
+            <br>
+            <li><input type="checkbox">     Season the chicken breasts with salt and pepper. In a large, oven-safe pan, heat the remaining 2 tablespoons grapeseed oil over medium high-heat. Add the chicken and cook until browned on both sides, 2 to 3 minutes per side. Add 4 tablespoons of the butter and 6 sprigs of the thyme, spooning the butter over the chicken breasts as it melts. Transfer the pan to the oven and roast until the chicken is cook through, about 5 minutes.</li>
+            <br>
+            <li><input type="checkbox">     In a medium saucepan, bring the stock and the remaining 3 sprigs thyme to a simmer over medium-high heat. Whisk in the cream and return to a simmer. Remove the pan from the heat and whisk in the remaining 3 tablespoons butter. Season with salt and pepper.</li>
+            <br>
+            <li><input type="checkbox">     To serve, place a chicken breast in the center of each four plates. Spoon the cream sauce over the chicken and garnish with cilantro. Serve with the crispy shoestring fries.</li>
+            <br>
+          </ol>
+          <h4>(Credit to the MasterChef Junior cookbook by Christina Tosi)</h4>
     </body>
 </html>

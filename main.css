@@ -724,3 +724,17 @@
     bottom: -397%;
     right: 10%;
   }
+
+  #word46 {
+    position: absolute;
+    bottom: -405%;
+    font-family: Copperplate;
+  }
+
+  #searedchicken {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -429%;
+    right: 74.25%;
+  }
