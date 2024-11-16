@@ -738,3 +738,18 @@
     bottom: -429%;
     right: 74.25%;
   }
+
+  #word47 {
+    position: absolute;
+    bottom: -405%;
+    right: 55%;
+    font-family: Copperplate;
+  }
+
+  #italianburger {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -429%;
+    right: 42%;
+  }
