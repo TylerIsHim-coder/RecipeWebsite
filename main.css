@@ -753,3 +753,18 @@
     bottom: -429%;
     right: 42%;
   }
+
+  #word48 {
+    position: absolute;
+    bottom: -405%;
+    right: 23.5%;
+    font-family: Copperplate;
+  }
+
+  #misocod {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -429%;
+    right: 10%;
+  }
