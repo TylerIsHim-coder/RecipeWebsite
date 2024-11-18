@@ -782,3 +782,18 @@
     bottom: -461%;
     right: 74.25%;
   }
+
+  #word50 {
+    position: absolute;
+    bottom: -437%;
+    right: 49%;
+    font-family: Copperplate;
+  }
+
+  #curry {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -461%;
+    right: 42%;
+  }

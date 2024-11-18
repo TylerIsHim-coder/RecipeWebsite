@@ -226,3 +226,18 @@
     bottom: -35%;
     right: 42%;
   }
+
+  #word12 {
+    position: absolute;
+    bottom: -11.5%;
+    right: 17%;
+    font-family: Copperplate;
+  }
+
+  #curry {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -35%;
+    right: 10%;
+  }
