@@ -797,3 +797,18 @@
     bottom: -461%;
     right: 42%;
   }
+
+  #word51 {
+    position: absolute;
+    bottom: -437%;
+    right: 21%;
+    font-family: Copperplate;
+  }
+
+  #casserole {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -461%;
+    right: 10%;
+  }
