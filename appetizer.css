@@ -166,3 +166,18 @@
     bottom: -2%;
     right: 74.25%;
   }
+
+  #word8 {
+    position: absolute;
+    bottom: 21.5%;
+    right: 49%;
+    font-family: Copperplate;
+  }
+
+  #spinach {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -2%;
+    right: 42%;
+  }
