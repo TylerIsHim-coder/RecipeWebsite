@@ -211,3 +211,18 @@
     bottom: -35%;
     right: 74.25%;
   }
+
+  #word11 {
+    position: absolute;
+    bottom: -11.5%;
+    right: 46.5%;
+    font-family: Copperplate;
+  }
+
+  #popcornchicken {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -35%;
+    right: 42%;
+  }
