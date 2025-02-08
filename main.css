@@ -826,3 +826,18 @@
     bottom: -493%;
     right: 74.25%;
   } 
+
+  #word53 {
+    position: absolute;
+    bottom: -469%;
+    right: 51%;
+    font-family: Copperplate;
+  }
+
+  #garlicpasta {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -493%;
+    right: 42%;
+  } 

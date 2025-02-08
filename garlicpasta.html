@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="main.css">
+        <link type="text/css" rel="stylesheet" href="garlicpasta.css">
     </head>
     <body>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
         <a href="index.html"><img src="fork+knife.png" id="logo"></a>
+
+        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,10 +22,8 @@
             <a href="allsoups.html">Soups & Salads</a>
             <a href="alldesserts.html">Desserts</a>
             <a href="asian.html">Asian Cuisine</a>
-            <a href="tyler.html">Tyler's Recipes</a>
+            <a href="tyler.html">Tyler's Favorites</a>
         </div>
-
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
 
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -99,7 +99,7 @@
                 window.open("asian.html");
               }
 
-              if (x === "seafood" || x === "shellfish" || x === "seafood recipes" || x === "fish recipes" || x === "shellfish recipes") {
+              if (x === "seafood" || x === "shellfish" || x === "seafood recipes" || x === "shellfish recipes") {
                 window.open("allseafood.html");
               }
 
@@ -127,7 +127,7 @@
                 window.open("beeflomein.html");
               }
 
-              if (x === "main dishes" || x === "main courses" || x === "Main dishes" || x === "Main courses") {
+              if (x === "main dishes" || x === "main courses" || x === "Main dishes" || x === "Main courses" || x === "main" || x === "Main dishes") {
                 window.open("main.html");
               }
 
@@ -147,7 +147,7 @@
                 window.open("tuscansalmon.html");
               }
 
-              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer") {
+              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer" || x === "starters" || x === "starting dishes") {
                 window.open("appetizer.html");
               }
 
@@ -155,7 +155,7 @@
                 window.open("deviledeggs.html");
               }
 
-              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp" || x === "shrimp" ) {
+              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp") {
                 window.open("sapshrimp.html");
               }
 
@@ -167,15 +167,11 @@
                 window.open("orangechicken.html");
               }
 
-              if (x === "burger" || x === "hamburger" || x === "Hamburger" || x === "Burger" || x === "cheeseburger" || x === "Cheeseburger") {
-                window.open("burger.html");
-              }
-
               if (x === "sesame beef" || x === "Sesame beef") {
                 window.open("sesamebeef.html");
               }
 
-              if (x === "poached cod" || x === "Poached cod" || x === "cod" || x === "cod dishes" || x === "cod dish") {
+              if (x === "poached cod" || x === "Poached cod") {
                 window.open("poachedcod.html");
               }
 
@@ -200,23 +196,7 @@
               }
 
               if (x === "lomo saltado" || x === "Lomo saltado" || x === "Peruvian beef" || x === "Peruvian Beef" || x === "beef peru" || x === "Peru beef") {
-                window.open("lomosaltado.html")
-              }
-
-              if (x === "desserts" || x === "Desserts" || x === "sweets") {
-                window.open("alldesserts.html");
-              }
-
-              if (x === "spaghetti sauce" || x === "slow cooked spaghetti sauce" || x === "marinara sauce") {
-                window.open("spaghettisauce.html");
-              }
-
-              if (x === "sauces" || x === "sauce" || x === "pasta sauce" || x === "pasta sauces") {
-                window.open("allsauces.html");
-              }
-
-              if (x === "spinach artichoke dip" || x === "spinach dip" || x === "artichoke dip" || x === "spinach artichoke") {
-                window.open("spinachdip.html");
+                window.open("lomosaltado.html");
               }
 
               if (x === "asian" || x === "asian food" || x === "Asian" || x === "Asian food" || x === "asian recipes" || x === "Asian recipes") {
@@ -302,277 +282,117 @@
               if (x === "spinach artichoke dip" || x === "spinach dip" || x === "artichoke dip" || x === "spinach artichoke") {
                 window.open("spinachdip.html");
               }
- 
+
+              if (x === "cream corn" || x === "creamed corn" || x === "creamy corn") {
+                window.open("creamcorn.html");
+              }
+
+              if (x === "brownie" || x === "brownies" || x === "chocolate brownie" || x === "Brownie") {
+                window.open("brownie.html");
+              }
+
+              if (x === "key lime pie" || x === "lime pie" || x === "Key lime pie" || x === "key pie" || x === "Lime pie" || x === "key lime") {
+                window.open("keylimepie.html");
+              }
+
+              if (x === "banana bread" || x === "banana loaf" || x === "janet's banana bread") {
+                window.open("bananabread.html");
+              }
+
+              if (x === "snapper" || x === "chili snapper" || x === "sweet chili snapper" || x === "snapper with sweet chili sauce") {
+                window.open("chilisnapper.html");
+              }
+
+              if (x === "pasta dough" || x === "fresh pasta" || x === "fresh pasta dough") {
+                window.open("pastadough.html");
+              }
+
+              if (x === "pappardelle" || x === "bacon cream pasta" || x === "bacon pasta" || x === "papardelle" || x === "bacon cream pappardelle") {
+                window.open("baconcreampasta.html");
+              }
+
+              if (x === "mashed potatoes" || x === "parmesan mashed potatoes") {
+                window.open("mashedpotatoes.html");
+              }
+
+              if (x === "seared ahi tuna" || x === "ahi tuna" || x === "seared tuna" || x === "cucumber salad" || x === "tuna") {
+                window.open("ahituna.html");
+              }
+
+              if (x === "chicken wings" || x === "buffalo wings" || x === "buffalo chicken wings" || x === "chicken buffalo wings") {
+                window.open("chickenwings.html");
+              }
+
+              if (x === "chocolate lava cake" || x === "lava cake" || x === "molten lava cake" || x ==="chocolate molten lava cake") {
+                window.open("lavacake.html");
+              }
+
+              if (x === "pan seared chicken" || x === "seared chicken" || x === "pan-seared chicken" || x === "oven seared chicken") {
+                window.open("searedchicken.html");
+              }
+
+              if (x === "broccolini" || x === "sauteed broccolni" || x === "brocolini" || x === "sautéed broccolini" || x === "seared broccolini") {
+                window.open("broccolini.html");
+              }
+
+              if (x === "italian burgers" || x === "Italian burgers" || x === "italian burger") {
+                window.open("italianburger.html");
+              }
+
+              if (x === "burger" | x === "burgers" || x === "beef burgers" || x === "hamburgers" || x === "hamburger" || x === "cheeseburgers") {
+                window.open("allburger.html");
+              }
+
+              if (x === "chicken parmesan" || x === "parmesan chicken" || x === "chicken parm") {
+                window.open("chickenparm.html");
+              }
+
+              if (x === "miso cod" || x === "cod miso" || x === "miso Cod" || x === "Miso cod" || x === "miso black cod") {
+                window.open("misocod.html");
+              }
+
+              if (x === "filet mignon" || x === "Filet mignon" || x === "seared filet mignon" || x === "grilled filet mignon") {
+                window.open("filetmignon.html");
+              }
+
+              if (x === "panna cotta" || x === "vanilla panna cotta" || x === "passion fruit gelee") {
+                window.open("passionpannacotta.html");
+              }
+
+              if (x === "california rolls" || x === "California rolls" || x === "california roll") {
+                window.open("california.html");
+              }
+
+              if (x === "sushi" || x === "sushis" || x === "nigri" || x === "roll" || x === "rolls" || x === "sashimi") {
+                window.open("allsushi.html");
+              }
+
+              if (x === "curry" || x === "japanese curry" || x === "chicken curry" || x === "yellow curry" || x === "japanese chicken curry") {
+                window.open("curry.html");
+              }
+
+              if (x === "cowboy casserole" || x === "cowboys casserole" || x === "cowboy's casserole" || x === "casserole") {
+                window.open("cowboycasserole.html");
+              }
+
+              if (x === "spinach" ||  x === "stir fried spinach" || x === "cooked spinach" || x === "stirred spinach" || x === "thai spinach" || x === "Thai spinach") {
+                window.open("thaispinach.html");
+              }
+
+              if (x === "popcorn chicken" || x === "Popcorn chicken") {
+                window.open("popcornchicken.html");
+              }
+  
               else {
                 window.open("specific.html");
-              }
+              } 
 
             }
           </script>
 
-        <h4 id="word1">Chef John's Swedish Meatballs:</h4>
-        <a href="swedish.html">
-            <img src="swedishmeatballs.jpeg" id="swedishmeatballs"> 
-        </a>
+          <h2>Creamy Garlic Pasta</h2>
+          <p>Estimated Time: </p>
+          <h2>Ingredients: </h2>
 
-        <h4 id="word2">Chef John's Salmon:</h4>
-        <a href="salmon.html">
-            <img src="salmon.jpeg" id="grilledsalmon"> 
-        </a>
-
-        <h4 id="word3">Easy Meatloaf:</h4>
-        <a href="meatloaf.html">
-            <img src="meatloaf.jpeg" id="meatloaf"> 
-        </a>
-
-        <h4 id="word4">Spinach Tomato Tortellini:</h4>
-        <a href="sttortellini.html">
-            <img src="tortellini.jpeg" id="sttortellini"> 
-        </a>
-
-        <h4 id="word5">Beef Stew VI:</h4>
-        <a href="beefstew.html">
-            <img src="beefstew.jpeg" id="beefstew"> 
-        </a>
-
-        <h4 id="word6">Garlic Shrimp Linguine:</h4>
-        <a href="gslinguine.html">
-            <img src="gslinguine.jpeg" id="gslinguine"> 
-        </a>
-
-        <h4 id="word7">Curry Stand Chicken Tikka Masala:</h4>
-        <a href="chickenmasala.html">
-            <img src="ctmasala.jpeg" id="chickenmasala"> 
-        </a>
-
-        <h4 id="word8">Alfredo Sauce:</h4>
-        <a href="alfredo.html">
-            <img src="alfredo.jpeg" id="alfredo"> 
-        </a>
-
-        <h4 id="word9">Just Like Wendy's Chili:</h4>
-        <a href="chili.html">
-            <img src="chili.jpeg" id="chili"> 
-        </a>
-
-        <h4 id="word10">Grilled Chicken Breast:</h4>
-        <a href="chickenbreast.html">
-            <img src="chickenbreast.jpeg" id="chickenbreast"> 
-        </a>
-
-        <h4 id="word11">Baked Sesame Chicken:</h4>
-        <a href="sesamechicken.html">
-            <img src="sesamechicken.jpeg" id="sesamechicken"> 
-        </a>
-
-        <h4 id="word12">Chef John's Beef Goulash:</h4>
-        <a href="beefgoulash.html">
-            <img src="beefgoulash.jpeg" id="beefgoulash"> 
-        </a>
-
-        <h4 id="word13">Seared Scallops:</h4>
-        <a href="scallops.html">
-            <img src="scallops.jpeg" id="scallops"> 
-        </a>
-
-        <h4 id="word14">Asian Coconut Rice:</h4>
-        <a href="coconutrice.html">
-            <img src="coconutrice.jpeg" id="coconutrice"> 
-        </a>
-
-        <h4 id="word15">Mongolian Beef:</h4>
-        <a href="mongolianbeef.html">
-            <img src="mongolianbeef.jpeg" id="mongolianbeef"> 
-        </a>
-
-        <h4 id="word16">Miso Ramen:</h4>
-        <a href="ramen.html">
-            <img src="ramen.jpeg" id="ramen"> 
-        </a>
-
-        <h4 id="word17">Chicken Fried Rice:</h4>
-        <a href="friedrice.html">
-            <img src="friedrice.jpeg" id="friedrice"> 
-        </a>
-
-        <h4 id="word18">Beef Lo Mein:</h4>
-        <a href="beeflomein.html">
-            <img src="beeflomein.jpeg" id="beeflomein"> 
-        </a>
-
-        <h4 id="word19">Tonkatsu (Pork Cutlet):</h4>
-        <a href="tonkatsu.html">
-            <img src="tonkatsu.jpeg" id="tonkatsu"> 
-        </a>
-
-        <h4 id="word20">Beef Hamburgers:</h4>
-        <a href="burger.html">
-            <img src="burger.jpeg" id="burger"> 
-        </a>
-
-        <h4 id="word21">Maryland Crab Cakes:</h4>
-        <a href="crabcakes.html">
-            <img src="crabcakes.jpeg" id="crabcakes"> 
-        </a>
-
-        <h4 id="word22">Shepherd's Pie:</h4>
-        <a href="sherpherdspie.html">
-            <img src="shepherdspie.jpeg" id="shepherdspie"> 
-        </a>
-
-        <h4 id="word23">Tuscan Salmon:</h4>
-        <a href="tuscansalmon.html">
-            <img src="tuscansalmon.jpeg" id="tuscansalmon"> 
-        </a>
-
-        <h4 id="word24">Salt and Pepper Shrimp:</h4>
-        <a href="sapshrimp.html">
-            <img src="sapshrimp.jpeg" id="sapshrimp"> 
-        </a>
-
-        <h4 id="word25">Sausage and Mushroom Ragu:</h4>
-        <a href="smragu.html">
-            <img src="smragu.jpeg" id="smragu"> 
-        </a>
-
-        <h4 id="word26">Orange Chicken:</h4>
-        <a href="orangechicken.html">
-            <img src="orangechicken.jpeg" id="orangechicken"> 
-        </a>
-
-        <h4 id="word27">Sesame Beef:</h4>
-        <a href="sesamebeef.html">
-            <img src="sesamebeef.jpeg" id="sesamebeef"> 
-        </a>
-
-        <h4 id="word28">Poached Cod:</h4>
-        <a href="poachedcod.html">
-            <img src="poachedcod.jpeg" id="poachedcod"> 
-        </a>
-
-        <h4 id="word29">Crispy Sichuan-Chili Chicken:</h4>
-        <a href="sichuanchicken.html">
-            <img src="sichuanchicken.jpeg" id="sichuanchicken"> 
-        </a>
-
-        <h4 id="word30">Shanghai Fried Noodles:</h4>
-        <a href="shanghainoodle.html">
-            <img src="shanghainoodle.jpeg" id="shanghainoodle"> 
-        </a>
-
-        <h4 id="word31">Beef and Broccoli:</h4>
-        <a href="beefbroccoli.html">
-            <img src="beefbroccoli.jpeg" id="beefbroccoli"> 
-        </a>
-
-        <h4 id="word32">Pasta all' Amatriciana:</h4>
-        <a href="pastaamatriciana.html">
-            <img src="pastaamatricicana.jpeg" id="pastaamatriciana"> 
-        </a>
-
-        <h4 id="word33">Lomo Saltado (Peruvian Beef):</h4>
-        <a href="lomosaltado.html">
-            <img src="lomosaltado.jpeg" id="lomosaltado"> 
-        </a>
-
-        <h4 id="word34">Thai Rice Soup:</h4>
-        <a href="thairicesoup.html">
-            <img src="thairicesoup.jpeg" id="thairicesoup"> 
-        </a>
-
-        <h4 id="word35">Beef Stroganoff:</h4>
-        <a href="beefstro.html">
-            <img src="beefstro.jpeg" id="beefstro"> 
-        </a>
-
-        <h4 id="word36">Lemon Butter Cod:</h4>
-        <a href="lemoncod.html">
-            <img src="lemoncod.jpeg" id="lemoncod"> 
-        </a>
-
-        <h4 id="word37">Ginger Soy Steak:</h4>
-        <a href="gingersoysteak.html">
-            <img src="gingersoysteak.jpeg" id="gingersoysteak"> 
-        </a>
-
-        <h4 id="word38">Peanut-Guajillo Pork Chops:</h4>
-        <a href="peanutporkchops.html">
-            <img src="peanutporkchops.jpeg" id="peanutporkchops"> 
-        </a>
-
-        <h4 id="word39">Chicken Noodle Soup:</h4>
-        <a href="chickennoodle.html">
-            <img src="chickennoodle.jpeg" id="chickennoodle"> 
-        </a>
-
-        <h4 id="word40">Orecchiette with Sausage:</h4>
-        <a href="sausageorecch.html">
-            <img src="sausageorecch.jpeg" id="sausageorecch"> 
-        </a>
-
-        <h4 id="word41">Cilantro-Lime Shrimp:</h4>
-        <a href="cilantroshrimp.html">
-            <img src="cilantroshrimp.jpeg" id="cilantroshrimp"> 
-        </a>
-
-        <h4 id="word42">Vietnamese Turmeric Fish:</h4>
-        <a href="turmericfish.html">
-            <img src="turmericfish.jpeg" id="turmericfish"> 
-        </a>
-
-        <h4 id="word43">Slow Cooked Spaghetti Sauce:</h4>
-        <a href="spaghettisauce.html">
-            <img src="spaghettisauce.webp" id="spaghettisauce"> 
-        </a>
-
-        <h4 id="word44">Snapper with Sweet-Chili Sauce:</h4>
-        <a href="chilisnapper.html">
-            <img src="chilisnapper.webp" id="chilisnapper"> 
-        </a>
-
-        <h4 id="word45">Pappardelle with Bacon Cream Sauce:</h4>
-        <a href="baconcreampasta.html">
-            <img src="baconcreampasta.jpeg" id="baconcreampasta"> 
-        </a>
-
-        <h4 id="word46">Pan-Seared Chicken:</h4>
-        <a href="searedchicken.html">
-            <img src="searedchicken.jpeg" id="searedchicken"> 
-        </a>
-
-        <h4 id="word47">Italian Burgers:</h4>
-        <a href="italianburger.html">
-            <img src="italianburger.jpeg" id="italianburger"> 
-        </a>
-
-        <h4 id="word48">Miso Black Cod:</h4>
-        <a href="misocod.html">
-            <img src="misocod.jpeg" id="misocod"> 
-        </a>
-
-        <h4 id="word49">Filet Mignon:</h4>
-        <a href="filetmignon.html">
-            <img src="filetmignon.jpeg" id="filetmignon"> 
-        </a>
-
-        <h4 id="word50">Japanese Chicken Curry:</h4>
-        <a href="curry.html">
-            <img src="curry.jpeg" id="curry">  
-        </a>
-
-        <h4 id="word51">Cowboy Casserole:</h4>
-        <a href="cowboycasserole.html">
-            <img src="casserole.jpeg" id="casserole"> 
-        </a>
-
-        <h4 id="word52">Popcorn Chicken with Basil:</h4>
-        <a href="popcornchicken.html">
-            <img src="popcornchicken.jpeg" id="popcornchicken"> 
-        </a>
-
-        <h4 id="word53">Creamy Garlic Pasta:</h4>
-        <a href="garlicpasta.html">
-            <img src="garlicpasta.jpeg" id="garlicpasta"> 
-        </a>
     </body>
 </html>
