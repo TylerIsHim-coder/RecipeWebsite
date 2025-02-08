@@ -841,3 +841,18 @@
     bottom: -493%;
     right: 42%;
   } 
+
+  #word54 {
+    position: absolute;
+    bottom: -469%;
+    right: 23%;
+    font-family: Copperplate;
+  }
+
+  #pansearedcod {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    bottom: -493%;
+    right: 10%;
+  } 
