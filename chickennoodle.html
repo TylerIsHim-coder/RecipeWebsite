@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="chickennoodle.css">
-    </head>
-    <body>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
-        <a href="index.html"><img src="fork+knife.png" id="logo"></a>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quick and Easy Chicken Noodle Soup | EasyRecipes</title>
+  <meta name="description" content="Quick and Easy Chicken Noodle Soup, ready in 35-40 mins, serves 6. Ingredients: 1 tablespoon butter, ½ cup chopped onion, ½ cup chopped celery, 4 (14.5 ounce) cans chicken broth, 1 (14.5 ounce) can vegetable broth, ½ pound chopped cooked chicken breast…">
+  <meta name="theme-color" content="#e4572e">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="EasyRecipes">
+  <meta property="og:title" content="Quick and Easy Chicken Noodle Soup | EasyRecipes">
+  <meta property="og:description" content="Quick and Easy Chicken Noodle Soup, ready in 35-40 mins, serves 6. Ingredients: 1 tablespoon butter, ½ cup chopped onion, ½ cup chopped celery, 4 (14.5 ounce) cans chicken broth, 1 (14.5 ounce) can vegetable broth, ½ pound chopped cooked chicken breast…">
+  <meta property="og:url" content="https://tylerishim-coder.github.io/RecipeWebsite/chickennoodle.html">
+  <meta property="og:image" content="https://tylerishim-coder.github.io/RecipeWebsite/images/chickennoodle.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://tylerishim-coder.github.io/RecipeWebsite/chickennoodle.html">
+  <link rel="icon" type="image/png" href="images/brand/favicon.png">
+  <link rel="apple-touch-icon" href="images/brand/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>try{var t=localStorage.getItem("er-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <script src="assets/js/recipes.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/recipe.js" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Recipe", "name": "Quick and Easy Chicken Noodle Soup", "image": ["https://tylerishim-coder.github.io/RecipeWebsite/images/chickennoodle.webp"], "recipeCategory": "Chicken", "recipeIngredient": ["1 tablespoon butter", "½ cup chopped onion", "½ cup chopped celery", "4 (14.5 ounce) cans chicken broth", "1 (14.5 ounce) can vegetable broth", "½ pound chopped cooked chicken breast", "1 ½ cups egg noodles", "1 cup sliced carrots", "½ teaspoon dried basil", "½ teaspoon dried oregano", "salt and ground black pepper to taste"], "recipeInstructions": [{"@type": "HowToStep", "text": "Melt butter in a large pot over medium heat. Add onion and celery and cook until just tender, about 5 minutes."}, {"@type": "HowToStep", "text": "Add chicken broth, vegetable broth, chicken, egg noodles, carrots, basil, oregano, salt, and pepper. Stir to combine and bring to a boil."}, {"@type": "HowToStep", "text": "Reduce heat and simmer for 20 minutes."}], "author": {"@type": "Person", "name": "Tyler"}, "totalTime": "PT40M", "recipeYield": "6"}</script>
+</head>
+<body data-page="recipe">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
 
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
+  <main id="main" class="container">
+    <article class="recipe" data-recipe-id="chickennoodle" data-yields="6">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="allchicken.html">Chicken</a></li>
+        </ol>
+      </nav>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="main.html">Main Dishes</a>
-            <a href="appetizer.html">Appetizers</a>
-            <a href="allbeef.html">Beef Dishes</a>
-            <a href="allpasta.html">Pastas</a>
-            <a href="allchicken.html">Chicken</a>
-            <a href="allseafood.html">Seafood</a>
-            <a href="allsoups.html">Soups & Salads</a>
-            <a href="asian.html">Asian Cuisine</a>
-            <a href="tyler.html">Tyler's Recipes</a>
+      <header class="recipe-hero">
+        <div class="recipe-hero-text">
+          <h1 class="recipe-title">Quick and Easy Chicken Noodle Soup</h1>
+          <ul class="recipe-facts">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><small>Total time</small>35-40 mins</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 19v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="7.5" r="3.5"/><path d="M21 19v-1a4 4 0 0 0-3-3.9M15.5 4.1a3.5 3.5 0 0 1 0 6.8"/></svg><span><small>Serves</small>6</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg><span><small>Ingredients</small>11</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7l2 2 4-4M4 17l2 2 4-4M13 7h7M13 17h7"/></svg><span><small>Steps</small>3</span></li>
+          </ul>
+          <div class="recipe-actions" id="recipe-actions"></div>
+          <div class="tag-list"><a class="tag" href="main.html">Main Dishes</a><a class="tag" href="allchicken.html">Chicken</a><a class="tag" href="allsoups.html">Soups &amp; Salads</a><a class="tag" href="tyler.html">Tyler&#x27;s Favorites</a></div>
         </div>
+        <figure class="recipe-photo">
+          <img src="images/chickennoodle.webp" alt="Quick and Easy Chicken Noodle Soup" width="750" height="750" fetchpriority="high">
+        </figure>
+      </header>
 
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-          <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-            }
-
-            function openPage() {
-              var x = document.getElementById("search").value;
-            }
-          </script>
-          <h2>Quick and Easy Chicken Noodle Soup</h2>
-          <p>Servings: 6 / Estimated Time: 35-40 mins</p>
-          <h2>Ingredients: </h2>
-          <ul>
+      <div class="recipe-body">
+        <section class="recipe-ingredients" aria-labelledby="ingredients-heading">
+          <div class="panel-head">
+            <h2 id="ingredients-heading">Ingredients</h2>
+          </div>
+          <ul class="ingredient-list">
             <li>1 tablespoon butter</li>
             <li>½ cup chopped onion</li>
             <li>½ cup chopped celery</li>
@@ -55,17 +74,25 @@
             <li>½ teaspoon dried oregano</li>
             <li>salt and ground black pepper to taste</li>
           </ul>
-          <h2>Directions: </h2>
-          <ol>
-            <li><input type="checkbox">   Melt butter in a large pot over medium heat. Add onion and celery and cook until just tender, about 5 minutes.</li>
-            <br>
-            <li><input type="checkbox">   Add chicken broth, vegetable broth, chicken, egg noodles, carrots, basil, oregano, salt, and pepper. Stir to combine and bring to a boil.</li>
-            <br>
-            <li><input type="checkbox">   Reduce heat and simmer for 20 minutes.</li>
-            <br>
+        </section>
 
+        <section class="recipe-directions" aria-labelledby="directions-heading">
+          <div class="panel-head">
+            <h2 id="directions-heading">Directions</h2>
+          </div>
+          <ol class="step-list">
+            <li>Melt butter in a large pot over medium heat. Add onion and celery and cook until just tender, about 5 minutes.</li>
+            <li>Add chicken broth, vegetable broth, chicken, egg noodles, carrots, basil, oregano, salt, and pepper. Stir to combine and bring to a boil.</li>
+            <li>Reduce heat and simmer for 20 minutes.</li>
           </ol>
-          <h4>(Credit to allrecipes.com)</h4>
+          <p class="recipe-credit">Recipe credit: allrecipes.com</p>
+        </section>
+      </div>
+    </article>
 
-    </body>
+    <section class="section related" id="related" hidden></section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
 </html>
