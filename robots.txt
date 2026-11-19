@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tylerishim-coder.github.io/RecipeWebsite/sitemap.xml

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    NEW RECIPE TEMPLATE
+    1. Copy this file to the repo root and rename it, e.g. "lemonbars.html".
+    2. Replace every TODO below. The id ("lemonbars") must match the file name.
+    3. Add a photo as images/lemonbars.webp (about 1200px wide) and a smaller copy as images/thumbs/lemonbars.webp (about 600px wide).
+    4. Add the recipe to assets/js/recipes.js so it shows up in search and on its category pages.
+    5. Run: python3 tools/check_site.py
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TODO Recipe Name | EasyRecipes</title>
+  <meta name="description" content="TODO one sentence describing the recipe.">
+  <meta name="theme-color" content="#e4572e">
+  <link rel="icon" type="image/png" href="images/brand/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>try{var t=localStorage.getItem("er-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <script src="assets/js/recipes.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/recipe.js" defer></script>
+</head>
+<body data-page="recipe">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main" class="container">
+    <!-- data-yields = number of servings; it powers the servings +/- buttons. Remove it if the recipe has no serving count. -->
+    <article class="recipe" data-recipe-id="TODO-id" data-yields="4">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="alldesserts.html">Desserts</a></li>
+        </ol>
+      </nav>
+
+      <header class="recipe-hero">
+        <div class="recipe-hero-text">
+          <h1 class="recipe-title">TODO Recipe Name</h1>
+          <ul class="recipe-facts">
+            <li><span><small>Total time</small>45 mins</span></li>
+            <li><span><small>Serves</small>4</span></li>
+          </ul>
+          <div class="recipe-actions" id="recipe-actions"></div>
+          <div class="tag-list"><a class="tag" href="alldesserts.html">Desserts</a></div>
+        </div>
+        <figure class="recipe-photo">
+          <img src="images/TODO-id.webp" alt="TODO Recipe Name" fetchpriority="high">
+        </figure>
+      </header>
+
+      <div class="recipe-body">
+        <section class="recipe-ingredients" aria-labelledby="ingredients-heading">
+          <div class="panel-head">
+            <h2 id="ingredients-heading">Ingredients</h2>
+          </div>
+          <!-- Start each line with the amount (2, 1/2, ½, 1 ½, 2-3) so it scales with the servings buttons. -->
+          <!-- Optional sub-heading for a group of ingredients: <h3>For the sauce</h3> -->
+          <ul class="ingredient-list">
+            <li>2 cups all-purpose flour</li>
+            <li>½ teaspoon salt</li>
+          </ul>
+        </section>
+
+        <section class="recipe-directions" aria-labelledby="directions-heading">
+          <div class="panel-head">
+            <h2 id="directions-heading">Directions</h2>
+          </div>
+          <!-- Times like "10 minutes" or "1 hour" automatically become tap-to-start timers. -->
+          <ol class="step-list">
+            <li>Preheat the oven to 350°F.</li>
+            <li>Bake for 25 minutes, until golden.</li>
+          </ol>
+          <aside class="recipe-notes">
+            <h3>Good to know</h3>
+            <p>Optional tip or note. Delete this block if you don't need it.</p>
+          </aside>
+          <p class="recipe-credit">Recipe credit: <a href="https://example.com" target="_blank" rel="noopener">example.com</a></p>
+        </section>
+      </div>
+    </article>
+
+    <section class="section related" id="related" hidden></section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>
