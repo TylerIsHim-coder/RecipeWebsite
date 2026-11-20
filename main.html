@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Main dishes — EasyRecipes</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="main.css">
     </head>
     <body>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
-        <a href="index.html"><img src="fork+knife.png" id="logo"></a>
-
+        <header class="site-header">
+          <button class="menu-toggle" type="button" aria-label="Open categories" onclick="openNav()"><span></span><span></span></button>
+          <a href="index.html"><img src="fork+knife.png" id="logo" alt="">Easy<span class="brand-accent">Recipes</span></a>
+          <form class="search-form" action="#" onsubmit="openPage(); return false"><span>⌕</span><input type="search" id="search" placeholder="Find a recipe" aria-label="Find a recipe"><button type="submit" aria-label="Search">↗</button></form>
+        </header>
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button type="button" class="closebtn" aria-label="Close menu" onclick="closeNav()">&times;</button>
+            <p class="drawer-label">Explore EasyRecipes</p>
             <a href="index.html">Home</a>
             <a href="main.html">Main Dishes</a>
             <a href="appetizer.html">Appetizers</a>
@@ -23,17 +30,13 @@
             <a href="tyler.html">Tyler's Recipes</a>
         </div>
 
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
-
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
           <script>
             function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
+              document.getElementById("mySidenav").classList.add("is-open");
             }
             
             function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("mySidenav").classList.remove("is-open");
             }
 
             function openPage() {
@@ -310,6 +313,9 @@
             }
           </script>
 
+        <main class="directory-page">
+          <div class="directory-intro"><p class="eyebrow">THE RECIPE COLLECTION</p><h1>Main dishes</h1><p>Find your new go-to dinner, from cozy classics to something a little different.</p></div>
+          <div class="directory-grid">
         <h4 id="word1">Chef John's Swedish Meatballs:</h4>
         <a href="swedish.html">
             <img src="swedishmeatballs.jpeg" id="swedishmeatballs"> 
@@ -579,5 +585,21 @@
         <a href="pansearedcod.html">
             <img src="pansearedcod.jpeg" id="pansearedcod"> 
         </a>
+          </div>
+        </main>
+        <script>
+          document.querySelectorAll('.directory-grid h4').forEach(function(title){
+            var imageLink=title.nextElementSibling;
+            if(!imageLink || imageLink.tagName!=='A') return;
+            var card=document.createElement('a');
+            card.className='directory-card';
+            card.href=imageLink.href;
+            card.innerHTML='<div class="directory-card-image"></div><div class="directory-card-title"></div><span class="directory-arrow">↗</span>';
+            card.querySelector('.directory-card-image').appendChild(imageLink.querySelector('img'));
+            card.querySelector('.directory-card-title').textContent=title.textContent.replace(/:$/, '');
+            title.replaceWith(card);
+            imageLink.remove();
+          });
+        </script>
     </body>
 </html>
