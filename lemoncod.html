@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="lemoncod.css">
-    </head>
-    <body>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
-        <a href="index.html"><img src="fork+knife.png" id="logo"></a>
-
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
-
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="main.html">Main Dishes</a>
-            <a href="appetizer.html">Appetizers</a>
-            <a href="allbeef.html">Beef Dishes</a>
-            <a href="allpasta.html">Pastas</a>
-            <a href="allchicken.html">Chicken</a>
-            <a href="allseafood.html">Seafood</a>
-            <a href="asian.html">Asian Cuisine</a>
-            <a href="tyler.html">Tyler's Recipes</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f0">
+  <meta name="description" content="Golden pan-seared cod with a bright lemon-butter pan sauce. An easy, flavorful dinner in 25 minutes.">
+  <title>Lemon Butter Cod — EasyRecipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lemoncod.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="menu-toggle" type="button" aria-label="Open recipe categories" aria-expanded="false" onclick="openNav()"><span></span><span></span></button>
+    <a class="brand" href="index.html"><img src="fork+knife.png" alt=""><span>Easy<span class="brand-accent">Recipes</span></span></a>
+    <nav class="top-links" aria-label="Popular categories"><a href="main.html">Recipes</a><a href="allpasta.html">Pasta</a><a href="allseafood.html">Seafood</a><a href="alldesserts.html">Desserts</a></nav>
+    <form class="search-form" action="main.html" onsubmit="return searchRecipes(event)"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a recipe" aria-label="Find a recipe"><button type="submit" aria-label="Search">↗</button></form>
+  </header>
+  <nav id="mySidenav" class="sidenav" aria-label="Recipe categories" aria-hidden="true">
+    <button class="closebtn" type="button" aria-label="Close menu" onclick="closeNav()">×</button>
+    <p class="drawer-label">Explore EasyRecipes</p>
+    <a href="index.html">Home</a><a href="main.html">Main Dishes</a><a href="appetizer.html">Appetizers</a><a href="allbeef.html">Beef Dishes</a><a href="allpasta.html">Pastas</a><a href="allchicken.html">Chicken</a><a href="allseafood.html">Seafood</a><a href="allsoups.html">Soups &amp; Salads</a><a href="alldesserts.html">Desserts</a><a href="asian.html">Asian Cuisine</a><a href="tyler.html">Tyler's Favorites</a>
+  </nav>
+  <main>
+    <article class="recipe-page">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span> / </span><a href="allseafood.html">Seafood</a><span> / </span><span aria-current="page">Lemon Butter Cod</span></nav>
+      <section class="recipe-hero">
+        <div class="recipe-intro">
+          <p class="eyebrow"><span></span> EASY DINNER · SEAFOOD</p>
+          <h1>Lemon Butter<br><em>Cod</em></h1>
+          <p class="recipe-deck">Golden, flaky cod meets a silky lemon-butter pan sauce. A fresh, feel-good dinner that’s ready in just 25 minutes.</p>
+          <div class="recipe-meta" aria-label="Recipe information"><div><span class="meta-icon">◷</span><span><small>TOTAL TIME</small><strong>25 minutes</strong></span></div><div><span class="meta-icon">♧</span><span><small>SERVES</small><strong>4 people</strong></span></div><div><span class="meta-icon">✳</span><span><small>DIFFICULTY</small><strong>Easy</strong></span></div></div>
+          <a class="jump-button" href="#ingredients">Get cooking <span>↓</span></a>
         </div>
-
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-          <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-            }
-          </script>
-          <h2>Lemon Butter Cod</h2>
-          <p>Servings: 4 / Estimated Time: 25 mins</p>
-          <h2>Ingredients: </h2>
-          <ul>
+        <figure class="recipe-photo"><img src="lemoncod.jpeg" alt="Lemon butter cod finished with fresh herbs"><figcaption>Bright lemon, golden butter, and flaky cod.</figcaption></figure>
+      </section>
+      <div class="recipe-content">
+        <aside class="ingredients-panel" id="ingredients">
+          <div class="panel-heading"><div><p class="eyebrow">GET READY</p><h2>Ingredients</h2></div><span class="ingredient-count">15 items</span></div>
+          <p class="ingredients-hint">Everything you need for a bright, buttery dinner.</p>
+          <ul class="ingredient-list">
             <li>4 (6 oz each) cod fillets, skinless, about 1-inch thick</li>
             <li>1 Tbsp all-purpose flour</li>
             <li>1/2 tsp paprika</li>
@@ -54,25 +57,31 @@
             <li>1 1/2 Tbsp fresh lemon juice</li>
             <li>1 Tbsp chopped fresh parsley</li>
           </ul>
-          <h2>Directions: </h2>
-          <ol>
-            <li><input type="checkbox">   In a small mixing bowl whisk together flour, paprika, onion powder, thyme, oregano, cayenne pepper, salt and pepper.</li>
-            <br>
-            <li><input type="checkbox">   Sprinkle and spread flour mixture over both sides of the cod fillets (use up all of the mixture).</li>
-            <br>
-            <li><input type="checkbox">   Melt 1 Tbsp butter and 1 Tbsp olive oil in a non-stick skillet over medium-high heat.</li>
-            <br>
-            <li><input type="checkbox">   Add cod and sear until golden brown and cooked through on each side, about 3 - 4 minutes per side (fish should flake easily with a fork when done). Transfer to serving plates.</li>
-            <br>
-            <li><input type="checkbox">   Reduce burner temperature to medium-low. Melt remaining 4 Tbsp butter in same skillet.</li>
-            <br>
-            <li><input type="checkbox">   Add garlic and saute just until fragrant and just lightly deepened in color (but not browned), about 15 seconds.</li>
-            <br>
-            <li><input type="checkbox">   Remove from heat and carefully pour and stir in chicken broth and lemon juice (careful it will steam!).</li>
-            <br>
-            <li><input type="checkbox">   Immediately pour sauce over cod fillets. Sprinkle with parsley and serve warm.</li>
-            <br>
+          <button class="print-button" type="button" onclick="window.print()">Print recipe <span>↗</span></button>
+        </aside>
+        <section class="directions-panel" id="directions">
+          <div class="panel-heading"><div><p class="eyebrow">LET'S MAKE IT</p><h2>Directions</h2></div><span class="step-count">8 steps</span></div>
+          <p class="ingredients-hint">Check off each step as you go.</p>
+          <ol class="step-list">
+            <li><label><input type="checkbox"><span class="step-number">01</span><span class="step-text">In a small mixing bowl whisk together flour, paprika, onion powder, thyme, oregano, cayenne pepper, salt and pepper.</span></label></li>
+            <li><label><input type="checkbox"><span class="step-number">02</span><span class="step-text">Sprinkle and spread flour mixture over both sides of the cod fillets (use up all of the mixture).</span></label></li>
+            <li><label><input type="checkbox"><span class="step-number">03</span><span class="step-text">Melt 1 Tbsp butter and 1 Tbsp olive oil in a non-stick skillet over medium-high heat.</span></label></li>
+            <li><label><input type="checkbox"><span class="step-number">04</span><span class="step-text">Add cod and sear until golden brown and cooked through on each side, about 3–4 minutes per side (fish should flake easily with a fork when done). Transfer to serving plates.</span></label></li>
+            <li><label><input type="checkbox"><span class="step-number">05</span><span class="step-text">Reduce burner temperature to medium-low. Melt remaining 4 Tbsp butter in same skillet.</span></label></li>
+            <li><label><input type="checkbox"><span class="step-number">06</span><span class="step-text">Add garlic and sauté just until fragrant and just lightly deepened in color (but not browned), about 15 seconds.</span></label></li>
+            <li><label><input type="checkbox"><span class="step-number">07</span><span class="step-text">Remove from heat and carefully pour and stir in chicken broth and lemon juice (careful, it will steam!).</span></label></li>
+            <li><label><input type="checkbox"><span class="step-number">08</span><span class="step-text">Immediately pour sauce over cod fillets. Sprinkle with parsley and serve warm.</span></label></li>
           </ol>
-          <h4>(Credit to cookingclassy.com)</h4>
-    </body>
+          <p class="recipe-credit">Recipe inspiration: cookingclassy.com</p>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><img src="fork+knife.png" alt=""><span>Easy<span class="brand-accent">Recipes</span></span></a><span>Good food, every day.</span><a href="main.html">Browse every recipe →</a></footer>
+  <script>
+    function openNav(){var nav=document.getElementById('mySidenav');nav.classList.add('is-open');nav.setAttribute('aria-hidden','false');document.querySelector('.menu-toggle').setAttribute('aria-expanded','true');}
+    function closeNav(){var nav=document.getElementById('mySidenav');nav.classList.remove('is-open');nav.setAttribute('aria-hidden','true');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}
+    function searchRecipes(event){event.preventDefault();var term=document.getElementById('search').value.trim().toLowerCase();var routes={'pasta':'allpasta.html','chicken':'allchicken.html','seafood':'allseafood.html','fish':'allfish.html','cod':'allcod.html','lemon cod':'lemoncod.html','lemon butter cod':'lemoncod.html','beef':'allbeef.html','dessert':'alldesserts.html','soup':'allsoups.html'};if(term)window.location.href=routes[term]||'specific.html';return false;}
+  </script>
+</body>
 </html>
