@@ -1,431 +1,159 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <a href="index.html"><center><h2 id="title">EasyRecipes</h2></center></a>
-        <a href="index.html"><img src="fork+knife.png" id="logo"></a>
-
-        <input type="search" value="" id="search" placeholder="  Search recipe..." onchange="openPage()">
-
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="main.html">Main Dishes</a>
-            <a href="appetizer.html">Appetizers</a>
-            <a href="allbeef.html">Beef Dishes</a>
-            <a href="allpasta.html">Pastas</a>
-            <a href="allchicken.html">Chicken</a>
-            <a href="allseafood.html">Seafood</a>
-            <a href="allsoups.html">Soups & Salads</a>
-            <a href="alldesserts.html">Desserts</a>
-            <a href="asian.html">Asian Cuisine</a>
-            <a href="tyler.html">Tyler's Favorites</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fffdf8">
+    <meta name="description" content="Find your next favorite with EasyRecipes: delicious, approachable recipes for every day.">
+    <title>EasyRecipes — Find your next favorite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="EasyRecipes home">
+                <img src="fork+knife.png" alt="">
+                <span>easy<span class="brand-accent">recipes</span></span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="main.html">Recipes</a>
+                <a href="allchicken.html">Chicken</a>
+                <a href="allpasta.html">Pasta</a>
+                <a href="allsoups.html">Soups &amp; salads</a>
+                <a href="alldesserts.html">Desserts</a>
+            </nav>
+            <form class="search-form" id="recipe-search" role="search">
+                <label class="visually-hidden" for="search">Search recipes</label>
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input id="search" type="search" placeholder="What are you craving?" autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">☰</button>
         </div>
+        <nav class="mobile-nav" id="mobile-nav" aria-label="More recipes">
+            <a href="main.html">All recipes</a>
+            <a href="appetizer.html">Appetizers</a>
+            <a href="allbeef.html">Beef</a>
+            <a href="allseafood.html">Seafood</a>
+            <a href="asian.html">Asian cuisine</a>
+            <a href="tyler.html">Tyler's favorites</a>
+        </nav>
+    </header>
 
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <main>
+        <section class="hero page-width" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <span class="eyebrow"><span class="eyebrow-mark">✳</span> GOOD FOOD, MADE EASY</span>
+                <h1 id="hero-title">A little inspiration.<br><span>A lot of delicious.</span></h1>
+                <p>Recipes worth gathering around, with something lovely for every day of the week.</p>
+                <a class="button button-dark" href="main.html">Explore all recipes <span aria-hidden="true">→</span></a>
+                <div class="hero-note"><span class="note-stars" aria-hidden="true">★★★★★</span><span>Find a new favorite today</span></div>
+            </div>
+            <a class="hero-photo" href="tuscansalmon.html" aria-label="Explore Tuscan Salmon">
+                <img src="tuscansalmon.jpeg" alt="Creamy Tuscan salmon with greens">
+                <span class="photo-label"><span>THIS WEEK'S PICK</span><strong>Tuscan Salmon</strong><span class="photo-link">Get the recipe&nbsp; →</span></span>
+            </a>
+            <div class="hero-sticker" aria-hidden="true"><span>made<br>with</span><strong>♥</strong><span>at home</span></div>
+        </section>
 
-          <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
+        <section class="category-section page-width" aria-labelledby="category-title">
+            <div class="section-heading compact-heading">
+                <div><span class="eyebrow">A GOOD PLACE TO START</span><h2 id="category-title">What sounds good?</h2></div>
+                <a class="text-link" href="main.html">Browse everything <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="category-list">
+                <a class="category-pill" href="allchicken.html"><span class="category-icon">🍗</span>Chicken</a>
+                <a class="category-pill" href="allpasta.html"><span class="category-icon">🍝</span>Pasta</a>
+                <a class="category-pill" href="allbeef.html"><span class="category-icon">🥘</span>Beef</a>
+                <a class="category-pill" href="allseafood.html"><span class="category-icon">🐟</span>Seafood</a>
+                <a class="category-pill" href="allsoups.html"><span class="category-icon">🍲</span>Soups &amp; salads</a>
+                <a class="category-pill" href="alldesserts.html"><span class="category-icon">🍰</span>Desserts</a>
+            </div>
+        </section>
+
+        <section class="favorites-section" aria-labelledby="favorites-title">
+            <div class="page-width">
+                <div class="section-heading">
+                    <div><span class="eyebrow">THE ONES WE KEEP COMING BACK TO</span><h2 id="favorites-title">A few fan favorites</h2></div>
+                    <a class="text-link" href="main.html">See all recipes <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="recipe-grid">
+                    <a class="recipe-card" href="thairicesoup.html" data-recipe="thai rice soup">
+                        <div class="recipe-image"><img src="thairicesoup.jpeg" alt="Warm bowl of Thai rice soup" loading="lazy"><span class="card-tag">COZY &amp; COMFORTING</span></div>
+                        <div class="recipe-info"><span class="recipe-category">SOUP</span><h3>Thai Rice Soup</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
+                    </a>
+                    <a class="recipe-card" href="lemoncod.html" data-recipe="lemon butter cod">
+                        <div class="recipe-image"><img src="lemoncod.jpeg" alt="Lemon butter cod" loading="lazy"><span class="card-tag">FRESH FAVORITE</span></div>
+                        <div class="recipe-info"><span class="recipe-category">SEAFOOD</span><h3>Lemon Butter Cod</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
+                    </a>
+                    <a class="recipe-card" href="sichuanchicken.html" data-recipe="crispy sichuan chili chicken">
+                        <div class="recipe-image"><img src="sichuanchicken.jpeg" alt="Crispy Sichuan-chili chicken" loading="lazy"><span class="card-tag">A LITTLE KICK</span></div>
+                        <div class="recipe-info"><span class="recipe-category">CHICKEN</span><h3>Crispy Sichuan-Chili Chicken</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
+                    </a>
+                    <a class="recipe-card" href="pastaamatriciana.html" data-recipe="pasta all amatriciana">
+                        <div class="recipe-image"><img src="pastaamatricicana.jpeg" alt="Pasta all' Amatriciana" loading="lazy"><span class="card-tag">PASTA NIGHT</span></div>
+                        <div class="recipe-info"><span class="recipe-category">PASTA</span><h3>Pasta all' Amatriciana</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
+                    </a>
+                    <a class="recipe-card" href="tuscansalmon.html" data-recipe="tuscan salmon">
+                        <div class="recipe-image"><img src="tuscansalmon.jpeg" alt="Tuscan salmon" loading="lazy"><span class="card-tag">WEEKDAY WINNER</span></div>
+                        <div class="recipe-info"><span class="recipe-category">SEAFOOD</span><h3>Tuscan Salmon</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
+                    </a>
+                    <a class="recipe-card" href="scallops.html" data-recipe="seared scallops">
+                        <div class="recipe-image"><img src="scallops.jpeg" alt="Golden seared scallops" loading="lazy"><span class="card-tag">SPECIAL ENOUGH</span></div>
+                        <div class="recipe-info"><span class="recipe-category">SEAFOOD</span><h3>Seared Scallops</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="callout page-width">
+            <span class="callout-spark" aria-hidden="true">✳</span>
+            <div><span class="eyebrow">YOUR NEXT GREAT MEAL STARTS HERE</span><h2>Come hungry. Leave inspired.</h2><p>From comforting classics to something new, your next favorite is just a recipe away.</p></div>
+            <a class="button button-outline" href="main.html">Find your recipe <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="index.html"><img src="fork+knife.png" alt=""><span>easy<span class="brand-accent">recipes</span></span></a><span>Good things happen around the table.</span><a href="tyler.html">Tyler's favorites</a></footer>
+
+    <script>
+        const searchForm = document.getElementById('recipe-search');
+        const recipeRoutes = {
+            'thai rice soup': 'thairicesoup.html', 'lemon butter cod': 'lemoncod.html',
+            'crispy sichuan chili chicken': 'sichuanchicken.html', 'pasta all amatriciana': 'pastaamatriciana.html',
+            'tuscan salmon': 'tuscansalmon.html', 'seared scallops': 'scallops.html',
+            'swedish meatballs': 'swedish.html', 'meatballs': 'swedish.html', 'beef stew': 'beefstew.html',
+            'salmon': 'allsalmon.html', 'meatloaf': 'meatloaf.html', 'tortellini': 'sttortellini.html',
+            'linguine': 'gslinguine.html', 'chicken tikka masala': 'chickenmasala.html',
+            'pasta': 'allpasta.html', 'noodles': 'allpasta.html', 'beef': 'allbeef.html',
+            'chicken': 'allchicken.html', 'seafood': 'allseafood.html', 'shrimp': 'allshrimp.html',
+            'soup': 'allsoups.html', 'soups': 'allsoups.html', 'salad': 'allsoups.html',
+            'dessert': 'alldesserts.html', 'desserts': 'alldesserts.html', 'asian': 'asian.html',
+            'appetizer': 'appetizer.html', 'appetizers': 'appetizer.html', 'main dishes': 'main.html',
+            'burger': 'allburger.html', 'cod': 'allcod.html', 'sushi': 'allsushi.html'
+        };
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const query = document.getElementById('search').value.trim().toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ');
+            if (!query) return;
+            if (recipeRoutes[query]) {
+                window.location.href = recipeRoutes[query];
+                return;
             }
-            
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-            }
-
-            function openPage() {
-              var x = document.getElementById("search").value;
-
-              if (x === "swedish meatballs" || x === "meatballs"){
-                window.open("swedish.html");
-              }
-
-              if (x === "beef stew"){
-                window.open("beefstew.html");
-              }
-
-              if (x === "salmon" || x === "salmon recipes"){
-                window.open("allsalmon.html");
-              }
-
-              if (x === "meatloaf"){
-                window.open("meatloaf.html");
-              }
-
-              if (x === "tortellini" || x === "spinach and tomato tortellini" || x === "tomato and spinach tortellini"){
-                window.open("sttortellini.html");
-              }
-
-              if (x === "linguine" || x === "shrimp linguine" || x === "garlic shrimp linguine" || x === "shrimp garlic linguine" || x === "lingwiny" || x === "linguiny" || x === "linguine pasta") {
-                window.open("gslinguine.html");
-              }
-
-              if (x === "chicken tikka masala" || x === "tikka masala" || x === "masala" || x === "chicken tikka massala" || x === "Indian curry") {
-                window.open("chickenmasala.html");
-              }
-
-              if (x === "pasta" || x === "noodles" || x === "Pasta" || x === "Noodles" || x === "pasta recipes") {
-                window.open("allpasta.html");
-              } 
-
-              if (x === "beef" || x === "meat" || x == "Meat" || x === "Beef" || x === "cow" || x === "Cow" || x === "beef dishes" || x === "beef recipes") {
-                window.open("allbeef.html");
-              }
-
-              if (x === "alfredo sauce" || x === "alfredo" || x === "Alfredo" || x === "Alfredo Sauce" || x === "alferdo sauce" || x === "alferdo") {
-                window.open("alfredo.html");
-              }
-
-              if (x === "chili" || x === "Chili" || x === "Just like wendy's chili" || x === "Just Like Wendy's Chili" || x === "Wendy's Chili" || x === "wendy's chili") {
-                window.open("chili.html");
-              }
-
-              if (x === "chicken" || x === "Chicken" || x === "chicken recipes" || x === "Chicken Recipes" || x === "Chicken recipes" || x === "chicken recipe" || x === "Chicken recipe") {
-                window.open("allchicken.html");
-              }
-
-              if (x === "sesame chicken" || x === "Sesame Chicken" || x === "Sesame chicken" || x === "chicken sesame") {
-                window.open("sesamechicken.html");
-              }
-
-              if (x === "beef goulash" || x === "goulash" || x === "Beef goulash" || x === "Beef Goulash" || x === "Goulash") {
-                window.open("beefgoulash.html");
-              }
-
-              if (x === "asian" || x === "Asian" || x === "asian food" || x === "Asian food" || x === "Asian Food" || x === "Asian cuisine" || x === "asian cuisine" || x === "Asian recipes" || x === "asian recipes") {
-                window.open("asian.html");
-              }
-
-              if (x === "seafood" || x === "shellfish" || x === "seafood recipes" || x === "shellfish recipes") {
-                window.open("allseafood.html");
-              }
-
-              if (x === "scallops" || x === "seared scallops" || x === "scallop recipe" || x === "scallops recipe") {
-                window.open("scallops.html");
-              }
-
-              if (x === "coconut rice" || x === "asian coconut rice" || x === "rice" || x === "Asian coconut rice" || x === "Coconut rice") {
-                window.open("coconutrice.html");
-              }
-
-              if (x === "mongolian beef" || x === "Mongolian beef" || x === "beef Mongolian" || x === "Mongolian steak" || x === "mongolian steak") {
-                window.open("mongolianbeef.html");
-              }
-
-              if (x === "ramen" || x === "Ramen" || x === "miso ramen" || x === "Miso ramen") {
-                window.open("ramen.html");
-              }
-
-              if (x === "chicken fried rice" || x === "fried rice" || x === "Chicken fried rice" || x === "Fried rice") {
-                window.open("friedrice.html");
-              }
-
-              if (x === "lo mein" || x === "beef lo mein" || x === "Beef lo mein") {
-                window.open("beeflomein.html");
-              }
-
-              if (x === "main dishes" || x === "main courses" || x === "Main dishes" || x === "Main courses" || x === "main" || x === "Main dishes") {
-                window.open("main.html");
-              }
-
-              if (x === "tonkatsu" || x === "Tonkatsu" || x === "pork cutlet" || x === "Japanese pork cutlet" || x === "japanese pork cutlet") {
-                window.open("tonkatsu.html");
-              }
-
-              if (x === "shepherd's pie" || x === "shepherds pie" || x === "sherpherds pie" || x === "Shepherds pie") {
-                window.open("sherpherdspie.html");
-              }
-
-              if (x === "grilled salmon" || x === "chef john's salmon" || x === "Chef John's Salmon" || x === "chef johns salmon" || x === "Grilled salmon") {
-                window.open("salmon.html");
-              }
-
-              if (x === "tuscan salmon" || x === "Tuscan salmon" || x === "tuscon salmon" || x === "Tuscon salmon") {
-                window.open("tuscansalmon.html");
-              }
-
-              if (x === "appetizers" || x === "appetizer" || x === "apertizers" || x === "Appetizers" || x === "Appetizer" || x === "starters" || x === "starting dishes") {
-                window.open("appetizer.html");
-              }
-
-              if (x === "deviled eggs" || x === "Deviled eggs" || x === "Million dollar deviled eggs" || x === "million dollar deviled eggs") {
-                window.open("deviledeggs.html");
-              }
-
-              if (x === "salt and pepper shrimp" || x === "Salt and pepper shrimp" || x === "pepper shrimp") {
-                window.open("sapshrimp.html");
-              }
-
-              if (x === "sausage and mushroom ragu" || x === "ragu" || x === "italian sausage and mushroom ragu" || x === "sausage ragu") {
-                window.open("smragu.html");
-              }
-
-              if (x === "orange chicken" || x === "chicken" || x === "Orange chicken") {
-                window.open("orangechicken.html");
-              }
-
-              if (x === "sesame beef" || x === "Sesame beef") {
-                window.open("sesamebeef.html");
-              }
-
-              if (x === "poached cod" || x === "Poached cod") {
-                window.open("poachedcod.html");
-              }
-
-              if (x === "sichuan chicken" || x === "sichuan chili chicken") {
-                window.open("sichuanchicken.html");
-              }
-
-              if (x === "shanghai noodles" || x === "Shanghai noodles" || x === "shanghai fried noodles") {
-                window.open("shanghainoodle.html");
-              }
-
-              if (x === "chinese" || x === "Chinese" || x === "chinese recipes" || x === "Chinese recipes" || x === "chinese food" || x === "Chinese food") {
-                window.open("chinese.html");
-              }
-
-              if (x === "beef and broccol" || x === "beef broccoli" || x === "Beef and broccoli") {
-                window.open("beefbroccoli.html");
-              }
-
-              if (x === "pasta all'amatriciana" || x === "amatriciana pasta" || x === "pasta amatriciana" || x === "pasta amaciana" || x === "pasta all amatriciana" || x === "pasta all amaciana" || x === "amaciana pasta") {
-                window.open("pastaamatriciana.html");
-              }
-
-              if (x === "lomo saltado" || x === "Lomo saltado" || x === "Peruvian beef" || x === "Peruvian Beef" || x === "beef peru" || x === "Peru beef") {
-                window.open("lomosaltado.html");
-              }
-
-              if (x === "asian" || x === "asian food" || x === "Asian" || x === "Asian food" || x === "asian recipes" || x === "Asian recipes") {
-                window.open("asian.html");
-              }
-
-              if (x === "thai rice soup" || x === "Thai rice soup" || x === "Thai soup" || x === "thai soup" || x === "tahi rice soup" || x === "Tahi rice soup" || x === "rice soup") {
-                window.open("thairicesoup.html");
-              }
-
-              if (x === "tyler" || x === "Tyler" || x === "tyler's favorite" || x === "Tyler's favorite") {
-                window.open("tyler.html");
-              }
-
-              if (x === "ground beef" || x === "ground beef recipes" || x === "Ground beef" || x === "Ground Beef") {
-                window.open("groundbeef.html");
-              }
-
-              if (x === "beef stroganoff" || x === "beef strogonoff" || x === "beef strogonof" || x === "Beef stroganoff" || x === "Beef Stroganoff" || x === "beef stro" || x === "Beef stro" || x === "ground beef stroganoff" || x === "ground beef strogonoff") {
-                window.open("beefstro.html");
-              }
-
-              if (x === "lemon cod" || x === "lemon butter cod" || x === "Butter cod" || x === "butter cod" || x === "Lemon cod" || x === "Lemon Butter Cod") {
-                window.open("lemoncod.html");
-              }
-
-              if (x === "cod dishes" || x === "cod" || x === "cod recipes" || x === "Cod" || x === "Cod recipes") {
-                window.open("allcod.html");
-              }
-
-              if (x === "ginger soy steak" || x === "Ginger soy steak" || x === "ginger steak" || x === "Ginger steak" || x === "ginger soy beef" || x === "ginger beef" || x === "soy steak" || x === "soy beef") {
-                window.open("gingersoysteak.html");
-              }
-
-              if (x === "pork chops" || x === "prok chops" || x === "pork chops with peanut sauce" || x === "pork chops with peanut guajillo sauce" || x === "Pork chops" || x === "Pork Chops") {
-                window.open("peanutporkchops.html");
-              }
-
-              if (x === "soup" || x === "soups" || x === "salads" || x === "salad" || x === "soup recipes" || x === "salad recipes" || x === "easy soup recipes") {
-                window.open("allsoups.html");
-              }
-
-              if (x === "chicken noodle soup" || x === "chicken noodle" || x === "chicken soup" || x === "noodle chicken soup" || x === "Chicken noodle soup") {
-                window.open("chickennoodle.html");
-              }
-
-              if (x === "fish" || x === "fish recipes" || x === "Fish" || x === "Fishes" || x === "fishes" || x === "fish dishes") {
-                window.open("allfish.html");
-              }
-
-              if (x === "cilantro lime shrimp" || x === "Cilantro lime shrimp" || x === "cilantro shrimp" || x === "lime shrimp" || x === "lime cilantro shrimp") {
-                window.open("cilantroshrimp.html");
-              }
-
-              if (x === "shrimp recipes" || x === "shrimp" || x === "shrimp dishes" || x === "shrimps") {
-                window.open("allshrimp.html");
-              }
-
-              if (x === "turmeric fish" || x === "vietnamese turmeric fish" || x === "vietnamese fish" || x === "Vietnamese turmeric fish" || x === "Vietnamese fish") {
-                window.open("turmericfish.html");
-              }
-
-              if (x === "desserts" || x === "Desserts" || x === "sweets" || x === "dessert") {
-                window.open("alldesserts.html");
-              }
-
-              if (x === "macarons" || x === "caramel macarons" || x === "macaron" || x === "salted caramel macarons") {
-                window.open("caramelmacarons.html");
-              }
-
-              if (x === "cheesecake" || x === "strawberry cheesecake" || x === "Cheesecake" || x === "cheesecake recipe") {
-                window.open("cheesecake.html");
-              }
-
-              if (x === "spaghetti sauce" || x === "slow cooked spaghetti sauce" || x === "marinara sauce" || x === "spaghetti") {
-                window.open("spaghettisauce.html");
-              }
-
-              if (x === "sauces" || x === "sauce" || x === "pasta sauce" || x === "pasta sauces") {
-                window.open("allsauces.html");
-              }
-
-              if (x === "spinach artichoke dip" || x === "spinach dip" || x === "artichoke dip" || x === "spinach artichoke") {
-                window.open("spinachdip.html");
-              }
-
-              if (x === "cream corn" || x === "creamed corn" || x === "creamy corn") {
-                window.open("creamcorn.html");
-              }
-
-              if (x === "brownie" || x === "brownies" || x === "chocolate brownie" || x === "Brownie") {
-                window.open("brownie.html");
-              }
-
-              if (x === "key lime pie" || x === "lime pie" || x === "Key lime pie" || x === "key pie" || x === "Lime pie" || x === "key lime") {
-                window.open("keylimepie.html");
-              }
-
-              if (x === "banana bread" || x === "banana loaf" || x === "janet's banana bread") {
-                window.open("bananabread.html");
-              }
-
-              if (x === "snapper" || x === "chili snapper" || x === "sweet chili snapper" || x === "snapper with sweet chili sauce") {
-                window.open("chilisnapper.html");
-              }
-
-              if (x === "pasta dough" || x === "fresh pasta" || x === "fresh pasta dough") {
-                window.open("pastadough.html");
-              }
-
-              if (x === "pappardelle" || x === "bacon cream pasta" || x === "bacon pasta" || x === "papardelle" || x === "bacon cream pappardelle") {
-                window.open("baconcreampasta.html");
-              }
-
-              if (x === "mashed potatoes" || x === "parmesan mashed potatoes") {
-                window.open("mashedpotatoes.html");
-              }
-
-              if (x === "seared ahi tuna" || x === "ahi tuna" || x === "seared tuna" || x === "cucumber salad" || x === "tuna") {
-                window.open("ahituna.html");
-              }
-
-              if (x === "chicken wings" || x === "buffalo wings" || x === "buffalo chicken wings" || x === "chicken buffalo wings") {
-                window.open("chickenwings.html");
-              }
-
-              if (x === "chocolate lava cake" || x === "lava cake" || x === "molten lava cake" || x ==="chocolate molten lava cake") {
-                window.open("lavacake.html");
-              }
-
-              if (x === "pan seared chicken" || x === "seared chicken" || x === "pan-seared chicken" || x === "oven seared chicken") {
-                window.open("searedchicken.html");
-              }
-
-              if (x === "broccolini" || x === "sauteed broccolni" || x === "brocolini" || x === "sautéed broccolini" || x === "seared broccolini") {
-                window.open("broccolini.html");
-              }
-
-              if (x === "italian burgers" || x === "Italian burgers" || x === "italian burger") {
-                window.open("italianburger.html");
-              }
-
-              if (x === "burger" | x === "burgers" || x === "beef burgers" || x === "hamburgers" || x === "hamburger" || x === "cheeseburgers") {
-                window.open("allburger.html");
-              }
-
-              if (x === "chicken parmesan" || x === "parmesan chicken" || x === "chicken parm") {
-                window.open("chickenparm.html");
-              }
-
-              if (x === "miso cod" || x === "cod miso" || x === "miso Cod" || x === "Miso cod" || x === "miso black cod") {
-                window.open("misocod.html");
-              }
-
-              if (x === "filet mignon" || x === "Filet mignon" || x === "seared filet mignon" || x === "grilled filet mignon") {
-                window.open("filetmignon.html");
-              }
-
-              if (x === "panna cotta" || x === "vanilla panna cotta" || x === "passion fruit gelee") {
-                window.open("passionpannacotta.html");
-              }
-
-              if (x === "california rolls" || x === "California rolls" || x === "california roll") {
-                window.open("california.html");
-              }
-
-              if (x === "sushi" || x === "sushis" || x === "nigri" || x === "roll" || x === "rolls" || x === "sashimi") {
-                window.open("allsushi.html");
-              }
-
-              if (x === "curry" || x === "japanese curry" || x === "chicken curry" || x === "yellow curry" || x === "japanese chicken curry") {
-                window.open("curry.html");
-              }
-
-              if (x === "cowboy casserole" || x === "cowboys casserole" || x === "cowboy's casserole" || x === "casserole") {
-                window.open("cowboycasserole.html");
-              }
-
-              if (x === "spinach" ||  x === "stir fried spinach" || x === "cooked spinach" || x === "stirred spinach" || x === "thai spinach" || x === "Thai spinach") {
-                window.open("thaispinach.html");
-              }
-
-              if (x === "popcorn chicken" || x === "Popcorn chicken") {
-                window.open("popcornchicken.html");
-              }
-
-              if (x === "garlic pasta" || x === "creamy garlic pasta" || x === "Garlic pasta") {
-                window.open("garlicpasta.html");
-              }
-  
-              else {
-                window.open("specific.html");
-              } 
-
-            }
-          </script>
-
-          <h2><marquee id="caption1" direction="right" behavior="alternate" animation-speed="10s" style="border: #0d207c 2.25px solid" width="98%">Chef's Favorites! </marquee></h2>
-
-          <h4 id="word1">Thai Rice Soup:</h4>
-          <a href="thairicesoup.html">
-              <img src="thairicesoup.jpeg" id="thairicesoup"> 
-          </a>
-
-          <h4 id="word2">Lemon Butter Cod:</h4>
-          <a href="lemoncod.html">
-              <img src="lemoncod.jpeg" id="lemoncod"> 
-          </a>
-
-          <h4 id="word3">Crispy Sichuan-Chili Chicken:</h4>
-          <a href="sichuanchicken.html">
-              <img src="sichuanchicken.jpeg" id="sichuanchicken"> 
-          </a>
-
-          <h4 id="word4">Pasta all' Amatriciana:</h4>
-          <a href="pastaamatriciana.html">
-              <img src="pastaamatricicana.jpeg" id="pastaamatriciana"> 
-          </a>
-
-          <h4 id="word5">Tuscan Salmon:</h4>
-          <a href="tuscansalmon.html">
-              <img src="tuscansalmon.jpeg" id="tuscansalmon"> 
-          </a>
-
-          <h4 id="word6">Seared Scallops:</h4>
-          <a href="scallops.html">
-              <img src="scallops.jpeg" id="scallops"> 
-          </a>
-    </body>
+            const card = Array.from(document.querySelectorAll('[data-recipe]')).find(function (item) {
+                return item.dataset.recipe.includes(query) || query.includes(item.dataset.recipe);
+            });
+            if (card) window.location.href = card.href;
+            else window.location.href = 'specific.html';
+        });
+        const menuToggle = document.querySelector('.menu-toggle');
+        menuToggle.addEventListener('click', function () {
+            const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', String(!isOpen));
+            document.getElementById('mobile-nav').classList.toggle('is-open', !isOpen);
+        });
+    </script>
+</body>
 </html>
