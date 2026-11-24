@@ -47,12 +47,12 @@
         <section class="hero page-width" aria-labelledby="hero-title">
             <div class="hero-copy">
                 <span class="eyebrow"><span class="eyebrow-mark">✳</span> GOOD FOOD, MADE EASY</span>
-                <h1 id="hero-title">A little inspiration.<br><span>A lot of delicious.</span></h1>
-                <p>Recipes worth gathering around, with something lovely for every day of the week.</p>
+                <h1 id="hero-title">Find your next favorite recipe</h1>
+                <p>Discover easy recipes for every day of the week</p>
                 <a class="button button-dark" href="main.html">Explore all recipes <span aria-hidden="true">→</span></a>
                 <div class="hero-note"><span class="note-stars" aria-hidden="true">★★★★★</span><span>Find a new favorite today</span></div>
             </div>
-            <a class="hero-photo" href="tuscansalmon.html" aria-label="Explore Tuscan Salmon">
+            <a class="hero-photo" href="tuscansalmon.html" aria-label="Explore Tuscan Salmon" data-recipe-link>
                 <img src="tuscansalmon.jpeg" alt="Creamy Tuscan salmon with greens">
                 <span class="photo-label"><span>THIS WEEK'S PICK</span><strong>Tuscan Salmon</strong><span class="photo-link">Get the recipe&nbsp; →</span></span>
             </a>
@@ -81,27 +81,27 @@
                     <a class="text-link" href="main.html">See all recipes <span aria-hidden="true">→</span></a>
                 </div>
                 <div class="recipe-grid">
-                    <a class="recipe-card" href="thairicesoup.html" data-recipe="thai rice soup">
+                    <a class="recipe-card" href="thairicesoup.html" data-recipe="thai rice soup" data-recipe-link>
                         <div class="recipe-image"><img src="thairicesoup.jpeg" alt="Warm bowl of Thai rice soup" loading="lazy"><span class="card-tag">COZY &amp; COMFORTING</span></div>
                         <div class="recipe-info"><span class="recipe-category">SOUP</span><h3>Thai Rice Soup</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
                     </a>
-                    <a class="recipe-card" href="lemoncod.html" data-recipe="lemon butter cod">
+                    <a class="recipe-card" href="lemoncod.html" data-recipe="lemon butter cod" data-recipe-link>
                         <div class="recipe-image"><img src="lemoncod.jpeg" alt="Lemon butter cod" loading="lazy"><span class="card-tag">FRESH FAVORITE</span></div>
                         <div class="recipe-info"><span class="recipe-category">SEAFOOD</span><h3>Lemon Butter Cod</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
                     </a>
-                    <a class="recipe-card" href="sichuanchicken.html" data-recipe="crispy sichuan chili chicken">
+                    <a class="recipe-card" href="sichuanchicken.html" data-recipe="crispy sichuan chili chicken" data-recipe-link>
                         <div class="recipe-image"><img src="sichuanchicken.jpeg" alt="Crispy Sichuan-chili chicken" loading="lazy"><span class="card-tag">A LITTLE KICK</span></div>
                         <div class="recipe-info"><span class="recipe-category">CHICKEN</span><h3>Crispy Sichuan-Chili Chicken</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
                     </a>
-                    <a class="recipe-card" href="pastaamatriciana.html" data-recipe="pasta all amatriciana">
+                    <a class="recipe-card" href="pastaamatriciana.html" data-recipe="pasta all amatriciana" data-recipe-link>
                         <div class="recipe-image"><img src="pastaamatricicana.jpeg" alt="Pasta all' Amatriciana" loading="lazy"><span class="card-tag">PASTA NIGHT</span></div>
                         <div class="recipe-info"><span class="recipe-category">PASTA</span><h3>Pasta all' Amatriciana</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
                     </a>
-                    <a class="recipe-card" href="tuscansalmon.html" data-recipe="tuscan salmon">
+                    <a class="recipe-card" href="tuscansalmon.html" data-recipe="tuscan salmon" data-recipe-link>
                         <div class="recipe-image"><img src="tuscansalmon.jpeg" alt="Tuscan salmon" loading="lazy"><span class="card-tag">WEEKDAY WINNER</span></div>
                         <div class="recipe-info"><span class="recipe-category">SEAFOOD</span><h3>Tuscan Salmon</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
                     </a>
-                    <a class="recipe-card" href="scallops.html" data-recipe="seared scallops">
+                    <a class="recipe-card" href="scallops.html" data-recipe="seared scallops" data-recipe-link>
                         <div class="recipe-image"><img src="scallops.jpeg" alt="Golden seared scallops" loading="lazy"><span class="card-tag">SPECIAL ENOUGH</span></div>
                         <div class="recipe-info"><span class="recipe-category">SEAFOOD</span><h3>Seared Scallops</h3><span class="recipe-cta">Get the recipe <span aria-hidden="true">→</span></span></div>
                     </a>
@@ -119,6 +119,24 @@
     <footer class="site-footer"><a class="brand footer-brand" href="index.html"><img src="fork+knife.png" alt=""><span>easy<span class="brand-accent">recipes</span></span></a><span>Good things happen around the table.</span><a href="tyler.html">Tyler's favorites</a></footer>
 
     <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'homepage_view',
+            source_path: window.location.pathname
+        });
+
+        document.querySelectorAll('[data-recipe-link]').forEach(function (link) {
+            link.addEventListener('click', function () {
+                const destination = new URL(link.href, window.location.href);
+                window.dataLayer.push({
+                    event: 'homepage_recipe_click',
+                    source_path: window.location.pathname,
+                    destination_path: destination.pathname,
+                    destination_url: destination.href
+                });
+            });
+        });
+
         const searchForm = document.getElementById('recipe-search');
         const recipeRoutes = {
             'thai rice soup': 'thairicesoup.html', 'lemon butter cod': 'lemoncod.html',
