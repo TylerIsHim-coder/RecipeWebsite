@@ -66,4 +66,24 @@
     lastClick = name; lastAt = now;
     send('click', name);
   }, true);
+
+  // Recipe detail pages have an Ingredients heading; category and index pages do not.
+  var isRecipePage = Array.prototype.some.call(document.querySelectorAll('h1, h2, h3, h4'), function (heading) {
+    return /^ingredients\s*:?\s*$/i.test(heading.textContent.trim());
+  });
+  if (isRecipePage) {
+    var style = document.createElement('style');
+    style.textContent = 'html { scroll-behavior: smooth; } .back-to-top-wrap { margin: 2rem auto; text-align: center; } .back-to-top-link { display: inline-block; padding: 0.75rem 1.25rem; border: 1px solid #505caf; border-radius: 999px; background: #505caf; color: #fff; font: 600 1rem/1.2 Arial, sans-serif; text-decoration: none; } .back-to-top-link:hover, .back-to-top-link:focus-visible { background: #3e488f; } .back-to-top-link:focus-visible { outline: 3px solid #d9a441; outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }';
+    document.head.appendChild(style);
+
+    document.body.id = document.body.id || 'top';
+    var wrap = document.createElement('p');
+    wrap.className = 'back-to-top-wrap';
+    var link = document.createElement('a');
+    link.className = 'back-to-top-link';
+    link.href = '#top';
+    link.textContent = 'Back to top';
+    wrap.appendChild(link);
+    document.body.appendChild(wrap);
+  }
 })();
